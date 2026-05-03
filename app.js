@@ -335,6 +335,7 @@ const cloneDemoState = () => ({
     packageLessons: 0,
     goal: '',
     notes: '',
+    availabilityNotes: '',
     lessonRates: {},
     tgId: ''
   })),
@@ -410,6 +411,7 @@ const loadSavedState = () => {
         packageLessons: 0,
         goal: '',
         notes: '',
+        availabilityNotes: '',
         lessonRates: {},
         tgId: '',
         ...s,
@@ -460,6 +462,92 @@ const getLessonRate = (lesson, student, groups) => {
 };
 const getStudentLastHomework = (studentId, lessons, groups) => lessons.filter(l => l.homework && (l.type === 'individual' ? l.targetId === studentId : groups.find(g => g.id === l.targetId)?.studentIds.includes(studentId))).sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time))[0]?.homework || '';
 const getStudentLessons = (studentId, lessons, groups) => lessons.filter(l => l.type === 'individual' ? l.targetId === studentId : groups.find(g => g.id === l.targetId)?.studentIds.includes(studentId));
+const timeToMin = time => {
+  const [h, m] = String(time || '00:00').split(':').map(Number);
+  return (h || 0) * 60 + (m || 0);
+};
+const minToTime = min => `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
+const lessonRange = lesson => {
+  const start = timeToMin(lesson.time);
+  return {
+    start,
+    end: start + Number(lesson.duration || 60)
+  };
+};
+const rangesOverlap = (a, b) => a.start < b.end && b.start < a.end;
+const lessonParticipantIds = (lesson, students, groups) => getLessonStudents(lesson, students, groups, {
+  includeArchived: true
+}).map(s => s.id);
+const findLessonConflicts = (candidate, lessons, students, groups, ignoreId = null) => {
+  const ids = lessonParticipantIds(candidate, students, groups);
+  if (!ids.length || !candidate.date || !candidate.time) return [];
+  const range = lessonRange(candidate);
+  return lessons.filter(l => l.id !== ignoreId && l.status === 'planned' && l.date === candidate.date).filter(l => {
+    if (!rangesOverlap(range, lessonRange(l))) return false;
+    const otherIds = lessonParticipantIds(l, students, groups);
+    return ids.some(id => otherIds.includes(id));
+  });
+};
+const conflictText = (conflicts, groups, students) => conflicts.map(l => {
+  const name = l.type === 'group' ? groups.find(g => g.id === l.targetId)?.name || 'Группа' : students.find(s => s.id === l.targetId)?.name || 'Ученик';
+  return `${fmtDate(l.date)} ${l.time} · ${name}`;
+}).join('\n');
+const parseAvailability = text => {
+  const days = {
+    пн: 1,
+    вт: 2,
+    ср: 3,
+    чт: 4,
+    пт: 5,
+    сб: 6,
+    вс: 0
+  };
+  const result = [];
+  String(text || '').split(/\n+/).forEach(line => {
+    const lower = line.trim().toLowerCase();
+    const dayKey = Object.keys(days).find(d => lower.startsWith(d));
+    if (!dayKey) return;
+    const times = [...lower.matchAll(/(\d{1,2}):?(\d{2})?\s*[-–—]\s*(\d{1,2}):?(\d{2})?/g)];
+    times.forEach(m => {
+      const start = Number(m[1]) * 60 + Number(m[2] || 0);
+      const end = Number(m[3]) * 60 + Number(m[4] || 0);
+      if (end > start) result.push({
+        day: days[dayKey],
+        start,
+        end
+      });
+    });
+  });
+  return result;
+};
+const commonAvailability = members => {
+  const parsed = members.map(s => parseAvailability(s.availabilityNotes));
+  if (!parsed.length || parsed.some(list => !list.length)) return [];
+  let common = parsed[0];
+  parsed.slice(1).forEach(list => {
+    common = common.flatMap(a => list.filter(b => a.day === b.day).map(b => ({
+      day: a.day,
+      start: Math.max(a.start, b.start),
+      end: Math.min(a.end, b.end)
+    }))).filter(x => x.end - x.start >= 45);
+  });
+  return common.sort((a, b) => a.day - b.day || a.start - b.start).slice(0, 8);
+};
+const nextDateForDow = day => {
+  const d = new Date();
+  const current = d.getDay();
+  d.setDate(d.getDate() + (day - current + 7) % 7);
+  return localDateString(d);
+};
+const DAY_FULL = {
+  1: 'Пн',
+  2: 'Вт',
+  3: 'Ср',
+  4: 'Чт',
+  5: 'Пт',
+  6: 'Сб',
+  0: 'Вс'
+};
 
 // ── ICONS ──────────────────────────────────────────────────────────────────────
 const Ico = ({
@@ -1240,6 +1328,7 @@ function StudentModal({
   const [subjects, setSubjects] = useState(student?.subjects || ['История']);
   const [goal, setGoal] = useState(student?.goal || '');
   const [notes, setNotes] = useState(student?.notes || '');
+  const [availabilityNotes, setAvailabilityNotes] = useState(student?.availabilityNotes || '');
   const [archived, setArchived] = useState(!!student?.archived);
   const [lessonRates, setLessonRates] = useState(student?.lessonRates || {});
   const toggleSubject = subject => setSubjects(p => p.includes(subject) ? p.filter(x => x !== subject) : [...p, subject]);
@@ -1258,6 +1347,7 @@ function StudentModal({
       subjects: subjects.length ? subjects : ['История'],
       goal,
       notes,
+      availabilityNotes,
       archived,
       lessonRates: lr
     });
@@ -1358,6 +1448,18 @@ function StudentModal({
           placeholder: "\u0415\u0413\u042D \u0438\u0441\u0442\u043E\u0440\u0438\u044F, \u041E\u0413\u042D, \u0448\u043A\u043E\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0430"
         })
       }), _jsx(FormField, {
+        label: "\u0414\u043E\u043F. \u0440\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435 / \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0435 \u043E\u043A\u043D\u0430",
+        children: _jsx("textarea", {
+          className: "input",
+          value: availabilityNotes,
+          onChange: e => setAvailabilityNotes(e.target.value),
+          placeholder: "\u041F\u043D 15:00-18:00\n\u0421\u0440 16:30-19:00\n\u0421\u0431 10:00-13:00",
+          style: {
+            minHeight: 86,
+            resize: 'vertical'
+          }
+        })
+      }), _jsx(FormField, {
         label: "\u0417\u0430\u043C\u0435\u0442\u043A\u0438",
         children: _jsx("textarea", {
           className: "input",
@@ -1415,7 +1517,7 @@ function GroupModal({
   const [sel, setSel] = useState(group?.studentIds || []);
   const [archived, setArchived] = useState(!!group?.archived);
   const [rateOverrides, setRateOverrides] = useState(group?.rateOverrides || {});
-  const availableStudents = students.filter(s => !s.archived || sel.includes(s.id));
+  const availableStudents = students.filter(s => !s.archived || sel.includes(s.id)).sort((a, b) => Number(sel.includes(b.id)) - Number(sel.includes(a.id)) || a.name.localeCompare(b.name, 'ru'));
   const toggle = id => setSel(p => p.includes(id) ? p.filter(x => x !== id) : [...p, id]);
   const submit = e => {
     e.preventDefault();
@@ -1696,18 +1798,26 @@ function LessonModal({
   groups,
   initialDate,
   initialStudentId,
+  initialType,
+  initialTargetId,
+  initialTime,
   lessonToEdit,
   onClose,
   onSave
 }) {
-  const [type, setType] = useState(lessonToEdit?.type || (initialStudentId ? 'individual' : 'group'));
-  const [targetId, setTgt] = useState(lessonToEdit ? String(lessonToEdit.targetId) : initialStudentId ? String(initialStudentId) : '');
+  const [type, setType] = useState(lessonToEdit?.type || initialType || (initialStudentId ? 'individual' : 'group'));
+  const [targetId, setTgt] = useState(lessonToEdit ? String(lessonToEdit.targetId) : initialTargetId ? String(initialTargetId) : initialStudentId ? String(initialStudentId) : '');
   const [subject, setSubject] = useState(lessonToEdit?.subject || 'История');
   const [date, setDate] = useState(lessonToEdit?.date || initialDate || getTodayDate());
-  const [time, setTime] = useState(lessonToEdit?.time || '15:00');
+  const [time, setTime] = useState(lessonToEdit?.time || initialTime || '15:00');
   const [days, setDays] = useState([]);
   const [recurring, setRec] = useState(false);
   const [weeks, setWeeks] = useState(4);
+  const [repeatUntil, setRepeatUntil] = useState(() => {
+    const d = new Date((lessonToEdit?.date || initialDate || getTodayDate()) + 'T00:00:00');
+    d.setDate(d.getDate() + 28);
+    return localDateString(d);
+  });
   const [applySeries, setApplySeries] = useState(false);
   const [topic, setTopic] = useState(lessonToEdit?.topic || '');
   const [homework, setHomework] = useState(lessonToEdit?.homework || '');
@@ -1777,10 +1887,12 @@ function LessonModal({
       let iter = new Date(baseDate);
       const curr = iter.getDay();
       iter.setDate(iter.getDate() + (di - curr + 7) % 7);
-      const wc = recurring ? weeks : 1;
+      const until = new Date((repeatUntil || date) + 'T23:59:59');
+      const wc = recurring ? 104 : 1;
       for (let i = 0; i < wc; i++) {
         const nd = new Date(iter);
         nd.setDate(iter.getDate() + i * 7);
+        if (recurring && nd > until) break;
         arr.push({
           ...base,
           seriesId,
@@ -1994,24 +2106,22 @@ function LessonModal({
             style: {
               fontSize: 11
             },
-            children: "\u043D\u0430"
-          }), _jsx("select", {
+            children: "\u0434\u043E"
+          }), _jsx("input", {
             className: "input",
-            value: weeks,
-            onChange: e => setWeeks(Number(e.target.value)),
+            type: "date",
+            value: repeatUntil,
+            min: date,
+            onChange: e => setRepeatUntil(e.target.value),
             style: {
-              width: 'auto',
+              flex: 1,
               padding: '6px 8px'
-            },
-            children: [2, 3, 4, 5, 8, 12, 16].map(w => _jsxs("option", {
-              value: w,
-              children: [w, " \u043D\u0435\u0434."]
-            }, w))
+            }
           }), _jsx("span", {
             style: {
               fontSize: 11
             },
-            children: "\u0432\u043F\u0435\u0440\u0451\u0434"
+            children: "\u0432\u043A\u043B."
           })]
         })]
       }), lessonToEdit?.seriesId && _jsxs("div", {
@@ -2275,6 +2385,7 @@ function StudentDetailModal({
   onEdit,
   onPay,
   onLesson,
+  onGroupLesson,
   onPackage,
   onMessage,
   onArchive
@@ -2288,7 +2399,8 @@ function StudentDetailModal({
   const plannedLessons = ownLessons.filter(l => l.status === 'planned');
   const homeworkLessons = ownLessons.filter(l => l.homework).slice(0, 12);
   const phoneClean = (student.phone || '').replace(/\s/g, '');
-  const tabs = [['overview', 'Обзор'], ['lessons', `Уроки ${ownLessons.length}`], ['payments', `Оплаты ${studentTxs.length}`], ['homework', `ДЗ ${homeworkLessons.length}`], ['notes', 'Заметки']];
+  const tabs = [['overview', 'Обзор'], ['lessons', `Уроки ${ownLessons.length}`], ['payments', `Оплаты ${studentTxs.length}`], ['homework', `ДЗ ${homeworkLessons.length}`], ['availability', 'Доп. расписание'], ['notes', 'Заметки']];
+  const memberGroups = groups.filter(g => !g.archived && g.studentIds?.includes(student.id));
   return _jsxs(Modal, {
     title: student.name,
     onClose: onClose,
@@ -2578,6 +2690,64 @@ function StudentDetailModal({
           children: l.homework
         })]
       }, l.id))
+    }), detailTab === 'availability' && _jsxs(_Fragment, {
+      children: [_jsxs("div", {
+        className: "card",
+        style: {
+          padding: 12
+        },
+        children: [_jsx("div", {
+          className: "label",
+          children: "\u0421\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0435 \u043E\u043A\u043D\u0430 \u0443\u0447\u0435\u043D\u0438\u043A\u0430"
+        }), _jsx("div", {
+          style: {
+            whiteSpace: 'pre-wrap',
+            fontSize: 12,
+            lineHeight: 1.7,
+            color: student.availabilityNotes ? 'var(--black)' : 'var(--text-muted)'
+          },
+          children: student.availabilityNotes || 'Заполните доп. расписание в редакторе ученика: например, Пн 15:00-18:00.'
+        })]
+      }), memberGroups.length === 0 ? _jsx(EmptyState, {
+        title: "\u0413\u0440\u0443\u043F\u043F \u0443 \u0443\u0447\u0435\u043D\u0438\u043A\u0430 \u043D\u0435\u0442",
+        text: "\u041A\u043E\u0433\u0434\u0430 \u0443\u0447\u0435\u043D\u0438\u043A \u0431\u0443\u0434\u0435\u0442 \u0432 \u0433\u0440\u0443\u043F\u043F\u0435, \u0437\u0434\u0435\u0441\u044C \u043F\u043E\u044F\u0432\u044F\u0442\u0441\u044F \u043E\u0431\u0449\u0438\u0435 \u043E\u043A\u043D\u0430 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u043D\u043E\u0441\u0430."
+      }) : memberGroups.map(g => {
+        const members = g.studentIds.map(id => students.find(s => s.id === id)).filter(Boolean);
+        const slots = commonAvailability(members);
+        return _jsxs("div", {
+          className: "card",
+          style: {
+            padding: 12
+          },
+          children: [_jsx("div", {
+            style: {
+              fontFamily: 'Unbounded,cursive',
+              fontSize: 12,
+              fontWeight: 900,
+              marginBottom: 6
+            },
+            children: g.name
+          }), slots.length ? _jsx("div", {
+            style: {
+              display: 'flex',
+              gap: 6,
+              flexWrap: 'wrap'
+            },
+            children: slots.map(slot => _jsx("button", {
+              className: "btn btn-sm btn-white",
+              onClick: () => onGroupLesson(g, nextDateForDow(slot.day), minToTime(slot.start)),
+              children: `${DAY_FULL[slot.day]} ${minToTime(slot.start)}-${minToTime(slot.end)}`
+            }, `${g.id}-${slot.day}-${slot.start}`))
+          }) : _jsx("div", {
+            style: {
+              fontSize: 12,
+              color: 'var(--text-sec)',
+              lineHeight: 1.6
+            },
+            children: "\u041E\u0431\u0449\u0435 \u043E\u043A\u043D\u0430 \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u044B. \u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u0434\u043E\u043F. \u0440\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u0443 \u0432\u0441\u0435\u0445 \u0443\u0447\u0435\u043D\u0438\u043A\u043E\u0432 \u0433\u0440\u0443\u043F\u043F\u044B."
+          })]
+        }, g.id);
+      })]
     }), detailTab === 'notes' && _jsxs("div", {
       className: "card",
       style: {
@@ -3800,7 +3970,15 @@ function App() {
     }
     triggerUndo('Операция удалена', lessons, snapS, snapT);
   };
+  const confirmLessonConflicts = (items, ignoreId = null) => {
+    const arr = Array.isArray(items) ? items : [items];
+    const conflicts = arr.flatMap(item => findLessonConflicts(item, lessons, students, groups, ignoreId));
+    const unique = [...new Map(conflicts.map(l => [l.id, l])).values()];
+    if (!unique.length) return true;
+    return confirm(`Есть конфликт расписания:\n\n${conflictText(unique, groups, students)}\n\nВсе равно сохранить?`);
+  };
   const saveLesson = (data, editId = null, options = {}) => {
+    if (!confirmLessonConflicts(data, editId)) return;
     if (editId) {
       const editLesson = lessons.find(l => l.id === editId);
       const patch = data[0];
@@ -3829,6 +4007,22 @@ function App() {
       }))]);
     }
     setModal(null);
+  };
+  const moveLesson = (lessonId, date, time) => {
+    const lesson = lessons.find(l => l.id === lessonId);
+    if (!lesson) return;
+    const patch = {
+      ...lesson,
+      date,
+      time
+    };
+    if (!confirmLessonConflicts(patch, lessonId)) return;
+    setLessons(p => p.map(l => l.id === lessonId ? {
+      ...l,
+      date,
+      time
+    } : l));
+    setSelDate(date);
   };
   const rescheduleLesson = (lessonId, date, time) => {
     const lesson = lessons.find(l => l.id === lessonId);
@@ -3903,7 +4097,9 @@ function App() {
           type: 'payment',
           amount: rate,
           date: getTodayDate(),
-          comment: `Отмена: ${fmtDate(lesson.date)}`
+          comment: `Отмена: ${fmtDate(lesson.date)}`,
+          lessonId: id,
+          kind: 'attendance'
         });
         upd[s.id] = (upd[s.id] || 0) + rate;
       });
@@ -4186,35 +4382,45 @@ function App() {
     const filtered = lessons.filter(l => l.date >= fromDate && l.date <= toDate).sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     const getName = l => l.type === 'group' ? groups.find(g => g.id === l.targetId)?.name || '?' : students.find(s => s.id === l.targetId)?.name || '?';
     const statusRu = s => LESSON_STATUS[s]?.label || s;
-    const rows = filtered.map(l => `
-      <tr>
-        <td>${fmtDate(l.date)}</td>
-        <td>${l.time}</td>
-        <td>${getName(l)}</td>
-        <td>${l.type === 'group' ? 'Группа' : 'Инд.'}</td>
-        <td>${l.subject || '—'}</td>
-        <td>${statusRu(l.status)}</td>
-        <td>${l.topic || '—'}</td>
-      </tr>`).join('');
+    const cards = filtered.map(l => `
+      <section class="lesson-card-print">
+        <div class="time">${l.time}</div>
+        <div class="body">
+          <div class="date">${fmtDate(l.date)} · ${l.type === 'group' ? 'Группа' : 'Индивидуально'} · ${statusRu(l.status)}</div>
+          <h3>${getName(l)}</h3>
+          <div class="chips"><span>${l.subject || '—'}</span>${l.topic ? `<span>${l.topic}</span>` : ''}</div>
+          <div class="checks">
+            <label><i></i> Проведено</label>
+            <label><i></i> Оплата</label>
+            <label><i></i> ДЗ</label>
+            <label><i></i> Напомнить</label>
+          </div>
+          <div class="notes">Заметки:</div>
+        </div>
+      </section>`).join('');
     const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/>
     <title>Расписание ${fromDate} — ${toDate}</title>
     <style>
-      body{font-family:Arial,sans-serif;font-size:12px;padding:20px;color:#111}
-      h2{margin-bottom:16px}
-      table{border-collapse:collapse;width:100%}
-      th{background:#111;color:#fff;padding:8px 10px;text-align:left;font-size:11px}
-      td{padding:7px 10px;border-bottom:1px solid #ddd;font-size:11px}
-      tr:nth-child(even)td{background:#f9f9f9}
-      @media print{body{padding:0}}
+      body{font-family:Inter,Arial,sans-serif;font-size:12px;padding:18px;color:#151515}
+      h2{margin:0 0 4px;font-size:20px}
+      .sub{color:#666;margin:0 0 14px}
+      .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+      .lesson-card-print{break-inside:avoid;display:grid;grid-template-columns:68px 1fr;border:2px solid #1d1d1d;border-radius:8px;overflow:hidden;min-height:132px;background:#fff}
+      .time{background:#f3d45f;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px}
+      .body{padding:10px 12px}
+      .date{font-size:10px;color:#666;text-transform:uppercase;font-weight:800;margin-bottom:3px}
+      h3{font-size:15px;line-height:1.2;margin:0 0 6px}
+      .chips{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+      .chips span{border:1.5px solid #222;border-radius:4px;padding:2px 6px;font-size:9px;font-weight:800;text-transform:uppercase}
+      .checks{display:grid;grid-template-columns:1fr 1fr;gap:5px 10px;margin:8px 0}
+      .checks label{font-size:11px;display:flex;align-items:center;gap:5px}
+      .checks i{width:13px;height:13px;border:1.8px solid #222;display:inline-block;border-radius:2px}
+      .notes{height:22px;border-bottom:1px solid #999;color:#777;font-size:10px}
+      @media print{body{padding:0}.grid{gap:8px}}
     </style></head><body>
     <h2>Расписание: ${fmtDate(fromDate)} — ${fmtDate(toDate)}</h2>
-    <p style="color:#666;margin-bottom:12px">Всего занятий: ${filtered.length}</p>
-    <table>
-      <thead><tr>
-        <th>Дата</th><th>Время</th><th>Ученик/Группа</th><th>Тип</th><th>Предмет</th><th>Статус</th><th>Тема</th>
-      </tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
+    <p class="sub">Всего занятий: ${filtered.length}</p>
+    <div class="grid">${cards}</div>
     </body></html>`;
     const w = window.open('', '_blank');
     if (!w) return;
@@ -4314,19 +4520,7 @@ function App() {
             gap: 8,
             alignItems: 'flex-start'
           },
-          children: [_jsx("button", {
-            className: "btn btn-sm btn-white",
-            title: "\u0421\u043E\u0432\u0435\u0442\u044B",
-            style: {
-              padding: '8px 10px'
-            },
-            onClick: () => setModal({
-              type: 'tips'
-            }),
-            children: _jsx(IcoLightbulb, {
-              size: 16
-            })
-          }), debt > 0 && _jsxs("div", {
+          children: [debt > 0 && _jsxs("div", {
             style: {
               background: 'var(--red)',
               border: 'var(--border)',
@@ -4915,6 +5109,12 @@ function App() {
                                 date: weekDates[di]
                               }
                             }),
+                            onDragOver: e => e.preventDefault(),
+                            onDrop: e => {
+                              e.preventDefault();
+                              const id = Number(e.dataTransfer.getData('text/lesson-id'));
+                              if (id) moveLesson(id, weekDates[di], time);
+                            },
                             className: "schedule-empty-cell"
                           })
                         }, di);
@@ -4924,16 +5124,28 @@ function App() {
                           padding: 2,
                           verticalAlign: 'top'
                         },
+                        onDragOver: e => e.preventDefault(),
+                        onDrop: e => {
+                          e.preventDefault();
+                          const id = Number(e.dataTransfer.getData('text/lesson-id'));
+                          if (id) moveLesson(id, weekDates[di], time);
+                        },
                         children: cell.map(l => {
                           const name = getLessonName(l);
                           const done = isFinalLesson(l);
                           const statusInfo = LESSON_STATUS[l.status] || LESSON_STATUS.planned;
+                          const hasConflict = findLessonConflicts(l, lessons, students, groups, l.id).length > 0;
                           return _jsxs("div", {
+                            draggable: l.status === 'planned',
+                            onDragStart: e => {
+                              e.dataTransfer.setData('text/lesson-id', String(l.id));
+                              e.dataTransfer.effectAllowed = 'move';
+                            },
                             onClick: () => setModal({
                               type: l.status === 'planned' || l.status === 'completed' ? 'attendance' : 'lessonStatus',
                               payload: l
                             }),
-                            className: `schedule-lesson-cell ${done ? 'done' : 'planned'} ${l.type === 'group' ? 'group' : 'individual'}`,
+                            className: `schedule-lesson-cell ${done ? 'done' : 'planned'} ${l.type === 'group' ? 'group' : 'individual'} ${hasConflict ? 'conflict' : ''}`,
                             onMouseEnter: e => {
                               if (!done) e.currentTarget.style.transform = 'translateY(-2px)';
                             },
@@ -4941,18 +5153,19 @@ function App() {
                             children: [(() => {
                               const stList = getLessonStudents(l, students, groups);
                               const hasDebt = stList.some(s => s.balance < 0);
-                              return hasDebt ? _jsx("div", {
-                                title: "\u0415\u0441\u0442\u044C \u0437\u0430\u0434\u043E\u043B\u0436\u0435\u043D\u043D\u043E\u0441\u0442\u044C",
-                                style: {
-                                  position: 'absolute',
-                                  top: 3,
-                                  right: 3,
-                                  width: 7,
-                                  height: 7,
-                                  borderRadius: '50%',
-                                  background: 'var(--red)',
-                                  border: '1.5px solid rgba(0,0,0,.3)'
-                                }
+                              const hasNote = Boolean(l.lessonNote);
+                              return hasDebt || hasConflict || hasNote ? _jsxs("div", {
+                                className: "lesson-markers",
+                                children: [hasNote && _jsx("span", {
+                                  className: "lesson-marker-dot lesson-marker-note",
+                                  title: "\u0415\u0441\u0442\u044C \u043F\u043E\u043C\u0435\u0442\u043A\u0430"
+                                }), hasConflict && _jsx("span", {
+                                  className: "lesson-marker-dot lesson-marker-conflict",
+                                  title: "\u041A\u043E\u043D\u0444\u043B\u0438\u043A\u0442 \u0440\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u044F"
+                                }), hasDebt && _jsx("span", {
+                                  className: "lesson-marker-dot lesson-marker-debt",
+                                  title: "\u0415\u0441\u0442\u044C \u0437\u0430\u0434\u043E\u043B\u0436\u0435\u043D\u043D\u043E\u0441\u0442\u044C"
+                                })]
                               }) : null;
                             })(), _jsx("div", {
                               className: "schedule-lesson-title",
@@ -4960,7 +5173,7 @@ function App() {
                             }), _jsxs("div", {
                               className: "schedule-lesson-meta",
                               children: [_jsx("span", {
-                                children: statusInfo.label
+                                children: hasConflict ? `⚠ ${statusInfo.label}` : statusInfo.label
                               }), l.duration && l.duration !== 60 && _jsx("span", {
                                 children: l.duration < 60 ? `${l.duration}м` : l.duration === 90 ? '1.5ч' : '2ч'
                               })]
@@ -4974,7 +5187,7 @@ function App() {
               })]
             })
           })
-        }), selDate && weekDates.includes(selDate) && (() => {
+        }), false && selDate && weekDates.includes(selDate) && (() => {
           const dl = scheduleLessons.filter(l => l.date === selDate).sort((a, b) => a.time.localeCompare(b.time));
           const obj = new Date(selDate + 'T00:00:00');
           return _jsxs("div", {
@@ -5464,18 +5677,6 @@ function App() {
             style: {
               padding: '6px 10px'
             },
-            title: "\u0421\u043E\u0432\u0435\u0442\u044B",
-            onClick: () => setModal({
-              type: 'tips'
-            }),
-            children: _jsx(IcoLightbulb, {
-              size: 15
-            })
-          }), _jsx("button", {
-            className: "btn btn-sm btn-white",
-            style: {
-              padding: '6px 10px'
-            },
             title: "\u042D\u043A\u0441\u043F\u043E\u0440\u0442 PDF",
             onClick: () => setModal({
               type: 'schedExport'
@@ -5576,6 +5777,7 @@ function App() {
     const setShowArchived = setStudentsShowArchived;
     const subjectFilter = studentsSubjectFilter;
     const setSubjectFilter = setStudentsSubjectFilter;
+    const availableSubjects = SUBJECTS.filter(subject => view === 'students' ? students.some(s => (!s.archived || showArchived) && (s.subjects || []).includes(subject)) : groups.some(g => g.subject === subject));
     const filtered = students.filter(s => {
       if (!showArchived && s.archived) return false;
       if (debtOnly && s.balance >= 0) return false;
@@ -5649,7 +5851,7 @@ function App() {
             className: "day-btn-name",
             children: "\u0412\u0441\u0435"
           })
-        }), SUBJECTS.map(subject => _jsx("button", {
+        }), availableSubjects.map(subject => _jsx("button", {
           className: `day-btn ${subjectFilter === subject ? 'active' : ''}`,
           onClick: () => setSubjectFilter(subject),
           style: {
@@ -6052,7 +6254,7 @@ function App() {
 
     // Period income (actual from txs)
     const periodTxs = txs.filter(tx => inBounds(tx.date));
-    const actualPayments = periodTxs.filter(tx => tx.type === 'payment').reduce((s, t) => s + t.amount, 0);
+    const actualPayments = periodTxs.filter(tx => tx.type === 'payment' && tx.kind !== 'attendance').reduce((s, t) => s + t.amount, 0);
     const actualCharges = periodTxs.filter(tx => tx.type === 'charge').reduce((s, t) => s + t.amount, 0);
 
     // Period earned from completed lessons (gross)
@@ -6715,12 +6917,12 @@ function App() {
         const weeks = Object.keys(weekMap).sort();
         if (weeks.length < 2) return null;
         const maxVal = Math.max(...weeks.map(w => weekMap[w]), 1);
-        const barW = Math.max(20, Math.min(48, Math.floor(260 / weeks.length) - 6));
-        const gap = 6;
-        const h = 80;
-        const svgW = weeks.length * (barW + gap);
+        const barW = Math.max(18, Math.min(34, Math.floor(220 / weeks.length) - 6));
+        const gap = 8;
+        const h = 58;
+        const svgW = Math.max(360, weeks.length * (barW + gap));
         return _jsxs("div", {
-          className: "finance-panel",
+          className: "finance-panel finance-chart-panel",
           children: [_jsx("div", {
             style: {
               fontFamily: 'Unbounded,cursive',
@@ -6730,14 +6932,12 @@ function App() {
             },
             children: "\u0414\u041E\u0425\u041E\u0414 \u041F\u041E \u041D\u0415\u0414\u0415\u041B\u042F\u041C"
           }), _jsx("div", {
-            style: {
-              overflowX: 'auto'
-            },
+            className: "finance-chart-scroll",
             children: _jsx("svg", {
               width: "100%",
               viewBox: `0 0 ${Math.max(svgW, 200)} ${h + 32}`,
+              className: "finance-chart-svg weekly",
               style: {
-                display: 'block',
                 minWidth: `${svgW}px`
               },
               children: weeks.map((w, i) => {
@@ -6790,12 +6990,12 @@ function App() {
           dayCounts[dow]++;
         });
         const max = Math.max(...dayCounts, 1);
-        const barW = 28,
-          gap = 8,
-          h = 100;
-        const svgW = dayNames.length * (barW + gap);
+        const barW = 24,
+          gap = 10,
+          h = 64;
+        const svgW = Math.max(360, dayNames.length * (barW + gap));
         return _jsxs("div", {
-          className: "finance-panel",
+          className: "finance-panel finance-chart-panel",
           children: [_jsx("div", {
             style: {
               fontFamily: 'Unbounded,cursive',
@@ -6807,9 +7007,7 @@ function App() {
           }), _jsx("svg", {
             width: "100%",
             viewBox: `0 0 ${svgW} ${h + 24}`,
-            style: {
-              display: 'block'
-            },
+            className: "finance-chart-svg days",
             children: dayCounts.map((c, i) => {
               const barH = c / max * h;
               const x = i * (barW + gap);
@@ -6953,12 +7151,30 @@ function App() {
     return _jsxs("div", {
       children: [_jsxs("div", {
         className: "page-title",
-        children: ["\u0424\u0438\u043D\u0430\u043D\u0441\u044B", _jsxs("button", {
-          className: "btn btn-sm btn-white",
-          onClick: () => setModal({
-            type: 'deletions'
-          }),
-          children: ["\u0416\u0443\u0440\u043D\u0430\u043B ", deletionLog.length ? `· ${deletionLog.length}` : '']
+        children: ["\u0424\u0438\u043D\u0430\u043D\u0441\u044B", _jsxs("div", {
+          style: {
+            display: 'flex',
+            gap: 8,
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            justifyContent: 'flex-end'
+          },
+          children: [_jsxs("button", {
+            className: "btn btn-sm btn-green",
+            onClick: () => setModal({
+              type: 'transaction',
+              payload: null
+            }),
+            children: [_jsx(IcoWallet, {
+              size: 13
+            }), " \u041D\u043E\u0432\u0430\u044F \u043E\u043F\u043B\u0430\u0442\u0430"]
+          }), _jsxs("button", {
+            className: "btn btn-sm btn-white",
+            onClick: () => setModal({
+              type: 'deletions'
+            }),
+            children: ["\u0416\u0443\u0440\u043D\u0430\u043B ", deletionLog.length ? `· ${deletionLog.length}` : '']
+          })]
         })]
       }), _jsxs("div", {
         className: "toggle-row",
@@ -7187,6 +7403,9 @@ function App() {
       groups: groups,
       initialDate: modal.payload?.date || getTodayDate(),
       initialStudentId: modal.payload?.studentId || null,
+      initialType: modal.payload?.initialType || null,
+      initialTargetId: modal.payload?.targetId || null,
+      initialTime: modal.payload?.time || null,
       lessonToEdit: modal.payload?.lesson || null,
       onClose: () => setModal(null),
       onSave: (data, options) => saveLesson(data, modal.payload?.lesson?.id || null, options)
@@ -7226,6 +7445,15 @@ function App() {
         payload: {
           date: getTodayDate(),
           studentId
+        }
+      }),
+      onGroupLesson: (group, date, time) => setModal({
+        type: 'lesson',
+        payload: {
+          date,
+          time,
+          initialType: 'group',
+          targetId: group.id
         }
       }),
       onPackage: student => setModal({
@@ -7318,10 +7546,13 @@ function LessonCard({
     style: {
       opacity: done ? .75 : 1
     },
-    children: [_jsxs("div", {
+    children: [lesson.lessonNote && _jsx("span", {
+      className: "lesson-note-dot",
+      title: "\u0415\u0441\u0442\u044C \u043F\u043E\u043C\u0435\u0442\u043A\u0430"
+    }), _jsxs("div", {
       className: "lesson-time",
       style: {
-        background: done ? '#333' : 'var(--black)',
+        background: done ? 'var(--done-bg)' : 'var(--black)',
         minWidth: compact ? 52 : 62,
         fontSize: compact ? 12 : 14
       },
@@ -7392,24 +7623,6 @@ function LessonCard({
           },
           children: statusInfo.label
         })]
-      }), !compact && _jsxs("div", {
-        className: "quick-actions",
-        children: [_jsx("button", {
-          className: "quick-action primary",
-          onClick: e => {
-            e.stopPropagation();
-            onAttend();
-          },
-          children: lesson.status === 'completed' ? 'Открыть урок' : 'Закрыть урок'
-        }), _jsx("button", {
-          className: "quick-action",
-          onClick: e => {
-            e.stopPropagation();
-            onStatus();
-          },
-          children: "\u0421\u0442\u0430\u0442\u0443\u0441"
-        })]
-      })]
     }), _jsxs("div", {
       className: "lesson-actions",
       children: [lesson.status === 'planned' ? _jsx("button", {
@@ -7489,6 +7702,7 @@ function LessonCard({
         })
       })]
     })]
+  })]
   });
 }
 ReactDOM.createRoot(document.getElementById('root')).render(_jsx(App, {}));

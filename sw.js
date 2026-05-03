@@ -1,12 +1,15 @@
-const CACHE_NAME = 'tutor-app-v1';
+const CACHE_NAME = 'tutor-app-v2';
 const ASSETS = [
   './',
   './index.html',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;700;900&family=Martian+Mono:wght@400;700&display=swap',
+  './app.js',
+  './manifest.json',
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
+  e.waitUntil(caches.open(CACHE_NAME).then(c => Promise.all(
+    ASSETS.map(asset => c.add(asset).catch(() => null))
+  )));
   self.skipWaiting();
 });
 

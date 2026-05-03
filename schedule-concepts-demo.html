@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Концепты мобильного расписания</title>
+<style>
+:root{
+  --ink:#202226;
+  --paper:#f6f4ee;
+  --surface:#fffdf8;
+  --line:#d8d1c2;
+  --muted:#77766f;
+  --yellow:#efcf59;
+  --blue:#5479cf;
+  --green:#5f9b74;
+  --red:#c5635d;
+  --shadow:0 6px 0 #202226;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Inter,Arial,sans-serif;
+  padding:28px;
+}
+h1{
+  margin:0 0 8px;
+  font-size:28px;
+  line-height:1.1;
+  letter-spacing:0;
+}
+.lead{margin:0 0 22px;color:var(--muted);max-width:860px;line-height:1.5}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(260px,1fr));
+  gap:18px;
+  align-items:start;
+}
+.concept h2{font-size:14px;margin:0 0 10px;text-transform:uppercase}
+.phone{
+  width:100%;
+  max-width:330px;
+  min-height:650px;
+  border:2px solid var(--ink);
+  border-radius:22px;
+  background:#151513;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.screen{padding:16px;background:#151513;color:#f4eadb;min-height:650px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.title{font-weight:900;font-size:19px;line-height:1.15}
+.sub{font-size:11px;color:#b8ad9d;margin-top:4px}
+.icon-btn{border:1px solid #5d5447;background:#24211c;color:#f4eadb;border-radius:8px;padding:8px 10px;font-weight:900}
+.days{display:flex;gap:7px;overflow:hidden;margin-bottom:14px}
+.day{
+  min-width:42px;
+  border:1px solid #5d5447;
+  background:#211f1b;
+  color:#b8ad9d;
+  border-radius:9px;
+  padding:7px 4px;
+  text-align:center;
+  font-weight:800;
+}
+.day b{display:block;color:#f4eadb;font-size:16px}
+.day.active{background:var(--yellow);color:#191813;border-color:var(--yellow)}
+.day.active b{color:#191813}
+.dot{width:6px;height:6px;background:var(--blue);border-radius:50%;margin:4px auto 0}
+.lesson{
+  display:grid;
+  grid-template-columns:66px 1fr;
+  border:1px solid #4b443a;
+  border-radius:12px;
+  overflow:hidden;
+  background:#201f1b;
+  margin-bottom:10px;
+}
+.time{
+  display:flex;align-items:center;justify-content:center;
+  color:var(--yellow);
+  font-size:17px;
+  font-weight:900;
+  background:#2a2824;
+}
+.body{padding:11px}
+.name{font-weight:900;font-size:15px;line-height:1.15;margin-bottom:7px}
+.chips{display:flex;gap:5px;flex-wrap:wrap}
+.chip{font-size:10px;font-weight:900;text-transform:uppercase;border:1px solid rgba(255,255,255,.45);border-radius:5px;padding:3px 6px;background:var(--blue);color:#fff}
+.chip.yellow{background:#8e7830}.chip.green{background:#407454}.chip.red{background:#7d3d39}
+.actions{display:flex;gap:7px;margin-top:10px}
+.act{flex:1;border:1px solid #61584a;background:#2a2824;color:#f4eadb;border-radius:8px;padding:8px 6px;font-size:11px;font-weight:800}
+.act.primary{background:var(--yellow);color:#181713}
+.section-label{font-size:12px;font-weight:900;color:#b8ad9d;margin:15px 0 8px;text-transform:uppercase}
+.miniweek{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:5px;
+  margin-bottom:14px;
+}
+.mini{
+  min-height:74px;
+  border:1px solid #4b443a;
+  border-radius:9px;
+  padding:6px;
+  background:#201f1b;
+}
+.mini.active{border-color:var(--yellow);background:#2a2518}
+.mini .d{font-size:10px;color:#b8ad9d;font-weight:900}
+.slot{margin-top:5px;background:#405d9b;color:#fff;border-radius:5px;padding:3px 2px;text-align:center;font-size:10px;font-weight:900}
+.slot.yellow{background:#8e7830}
+.timeline-day{font-size:12px;text-transform:uppercase;font-weight:900;color:#b8ad9d;margin:14px 0 8px;border-top:1px solid #403a32;padding-top:12px}
+.compact-lesson{
+  display:flex;gap:10px;align-items:center;
+  border:1px solid #4b443a;
+  background:#201f1b;
+  border-radius:10px;
+  padding:10px;
+  margin-bottom:8px;
+}
+.compact-time{font-size:17px;font-weight:900;color:var(--yellow);min-width:52px}
+.loadbar{height:8px;border-radius:99px;background:#38342d;overflow:hidden;margin-top:8px}
+.loadbar span{display:block;height:100%;background:var(--green)}
+.filter-row{display:flex;gap:7px;overflow:hidden;margin-bottom:12px}
+.filter{border:1px solid #5d5447;border-radius:99px;padding:7px 10px;color:#f4eadb;background:#211f1b;font-size:11px;font-weight:800;white-space:nowrap}
+.filter.active{background:var(--yellow);color:#17130d}
+.why{font-size:12px;line-height:1.45;color:#615d55;margin-top:12px;max-width:330px}
+@media(max-width:1180px){.grid{grid-template-columns:repeat(2,minmax(260px,1fr))}}
+@media(max-width:620px){
+  body{padding:18px}
+  .grid{grid-template-columns:1fr}
+  .phone{max-width:none}
+}
+</style>
+</head>
+<body>
+  <h1>4 концепта мобильной недели</h1>
+  <p class="lead">Это не финальный дизайн, а быстрый визуальный стенд: можно сравнить плотность, читаемость и сценарии работы репетитора на телефоне.</p>
+
+  <main class="grid">
+    <section class="concept">
+      <h2>1. Лента выбранного дня</h2>
+      <div class="phone">
+        <div class="screen">
+          <div class="top">
+            <div><div class="title">Расписание</div><div class="sub">5-11 мая · 8 уроков</div></div>
+            <button class="icon-btn">+</button>
+          </div>
+          <div class="days">
+            <div class="day">Пн<b>5</b><div class="dot"></div></div>
+            <div class="day">Вт<b>6</b></div>
+            <div class="day active">Ср<b>7</b><div class="dot"></div></div>
+            <div class="day">Чт<b>8</b></div>
+            <div class="day">Пт<b>9</b><div class="dot"></div></div>
+            <div class="day">Сб<b>10</b></div>
+          </div>
+          <div class="section-label">Среда, 7 мая</div>
+          <article class="lesson">
+            <div class="time">15:00</div>
+            <div class="body">
+              <div class="name">История 10<br>(Вика, Алиса)</div>
+              <div class="chips"><span class="chip">Группа</span><span class="chip">История</span></div>
+              <div class="actions"><button class="act primary">Закрыть</button><button class="act">Статус</button></div>
+            </div>
+          </article>
+          <article class="lesson">
+            <div class="time">16:30</div>
+            <div class="body">
+              <div class="name">Общество 11<br>(Полина, Яна)</div>
+              <div class="chips"><span class="chip">Группа</span><span class="chip yellow">Общество</span></div>
+            </div>
+          </article>
+          <article class="lesson">
+            <div class="time">18:00</div>
+            <div class="body">
+              <div class="name">Индивидуально<br>Андрей</div>
+              <div class="chips"><span class="chip green">ДЗ</span><span class="chip red">Долг</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <p class="why">Лучший рабочий вариант: мало когнитивной нагрузки, карточки крупные, быстрые действия рядом с уроком.</p>
+    </section>
+
+    <section class="concept">
+      <h2>2. День-доска со свайпом</h2>
+      <div class="phone">
+        <div class="screen">
+          <div class="top">
+            <div><div class="title">Пятница</div><div class="sub">9 мая · свайп по дням</div></div>
+            <button class="icon-btn">↔</button>
+          </div>
+          <div class="section-label">Сегодня</div>
+          <article class="lesson">
+            <div class="time">14:00</div>
+            <div class="body">
+              <div class="name">Свободное окно</div>
+              <div class="chips"><span class="chip green">Можно поставить</span></div>
+              <div class="actions"><button class="act primary">+ урок</button></div>
+            </div>
+          </article>
+          <article class="lesson">
+            <div class="time">15:00</div>
+            <div class="body">
+              <div class="name">Общество 10<br>(Марк, Анатолий)</div>
+              <div class="chips"><span class="chip">Группа</span><span class="chip yellow">Общество</span></div>
+            </div>
+          </article>
+          <article class="lesson">
+            <div class="time">18:00</div>
+            <div class="body">
+              <div class="name">История 10<br>(Андрей, Ирина, Илья)</div>
+              <div class="chips"><span class="chip">Группа</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <p class="why">Похоже на календарь, но не пытается запихнуть всю неделю в 360 пикселей. Хорошо для свайпов.</p>
+    </section>
+
+    <section class="concept">
+      <h2>3. Мини-карта недели + детали</h2>
+      <div class="phone">
+        <div class="screen">
+          <div class="top">
+            <div><div class="title">Неделя</div><div class="sub">нагрузка и выбранный день</div></div>
+            <button class="icon-btn">PDF</button>
+          </div>
+          <div class="miniweek">
+            <div class="mini"><div class="d">Пн</div><div class="slot">15</div></div>
+            <div class="mini"><div class="d">Вт</div><div class="slot yellow">18</div></div>
+            <div class="mini active"><div class="d">Ср</div><div class="slot">15</div><div class="slot">16:30</div><div class="slot yellow">18</div></div>
+            <div class="mini"><div class="d">Чт</div></div>
+            <div class="mini"><div class="d">Пт</div><div class="slot">15</div></div>
+            <div class="mini"><div class="d">Сб</div><div class="slot">12</div></div>
+            <div class="mini"><div class="d">Вс</div></div>
+          </div>
+          <div class="section-label">Среда · 3 урока</div>
+          <article class="compact-lesson"><div class="compact-time">15:00</div><div><b>История 10</b><div class="sub">Вика, Алиса</div></div></article>
+          <article class="compact-lesson"><div class="compact-time">16:30</div><div><b>Общество 11</b><div class="sub">Полина, Яна</div></div></article>
+          <article class="compact-lesson"><div class="compact-time">18:00</div><div><b>Андрей</b><div class="sub">индивидуально</div></div></article>
+          <div class="section-label">Нагрузка</div>
+          <div class="loadbar"><span style="width:68%"></span></div>
+        </div>
+      </div>
+      <p class="why">Даёт обзор всей недели без мелкого текста. Детали только по выбранному дню.</p>
+    </section>
+
+    <section class="concept">
+      <h2>4. Таймлайн ближайших уроков</h2>
+      <div class="phone">
+        <div class="screen">
+          <div class="top">
+            <div><div class="title">Ближайшее</div><div class="sub">неделя списком</div></div>
+            <button class="icon-btn">⌕</button>
+          </div>
+          <div class="filter-row">
+            <div class="filter active">Все</div><div class="filter">Долги</div><div class="filter">ДЗ</div><div class="filter">Окна</div>
+          </div>
+          <div class="timeline-day">Сегодня</div>
+          <article class="compact-lesson"><div class="compact-time">15:00</div><div><b>История 10</b><div class="sub">закрыть урок после занятия</div></div></article>
+          <article class="compact-lesson"><div class="compact-time">18:00</div><div><b>Инд. Полина</b><div class="sub">есть домашка</div></div></article>
+          <div class="timeline-day">Завтра</div>
+          <article class="compact-lesson"><div class="compact-time">16:30</div><div><b>Общество 11</b><div class="sub">2 ученика · без долгов</div></div></article>
+          <div class="timeline-day">Пятница</div>
+          <article class="compact-lesson"><div class="compact-time">14:00</div><div><b>Свободное окно</b><div class="sub">подходит группе История 10</div></div></article>
+        </div>
+      </div>
+      <p class="why">Самый быстрый режим “что дальше”. Меньше календарности, зато максимум пользы каждый день.</p>
+    </section>
+  </main>
+</body>
+</html>
