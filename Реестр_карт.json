@@ -1,0 +1,2822 @@
+{
+  "date": "2026-09-09",
+  "topics": [
+    {
+      "key": "early",
+      "period": 0,
+      "year": 900,
+      "title": "Русь IX-X веков — племена, торговые пути и первые князья",
+      "learn": "Киев, Новгород, Днепр; путь из варяг в греки; походы Олега, Игоря и Святослава.",
+      "variants": [
+        {
+          "topic": "early",
+          "source": "Демоверсии ФИПИ 2022–2024",
+          "code": "DEMO2024",
+          "url": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2024/is_11_2024.zip",
+          "priority": 0,
+          "page": 6,
+          "document": "ФИПИ_2024_Демоверсия.pdf",
+          "width": 1278,
+          "height": 1569,
+          "sha256": "747465c6fb56efd52e315935033739107641492ac6ff12087f8cfea6cdc005d6",
+          "path": "01_Древняя_Русь_IX-XII/01_Русь IX-X веков — племена, торговые пути и первые князья/00_Основная_DEMO2024.png",
+          "main": true,
+          "also_documents": [
+            "ФИПИ_2022_Демоверсия.pdf",
+            "ФИПИ_2023_Демоверсия.pdf"
+          ],
+          "also_urls": [
+            "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2022/is_11_2022.zip",
+            "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2023/is_11_2023.zip"
+          ]
+        }
+      ],
+      "number": 1,
+      "folder": "01_Древняя_Русь_IX-XII/01_Русь IX-X веков — племена, торговые пути и первые князья",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "15422D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/B46CBA3E6640962548B93550DF4D0579/xs3docsrcB46CBA3E6640962548B93550DF4D0579_1_1481625289.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "B2ABB8",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/200CAEBDAB9B893044CBD2FAAF28DED1/xs3docsrc200CAEBDAB9B893044CBD2FAAF28DED1_1_1536046319.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A02",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 3,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "sviat",
+      "period": 0,
+      "year": 965,
+      "title": "Походы Святослава",
+      "learn": "Хазарский каганат, Итиль, Саркел, Доростол; восточное и балканское направления походов.",
+      "variants": [
+        {
+          "topic": "sviat",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A03",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 5,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 891,
+          "height": 877,
+          "sha256": "95ff815d98b34eed7da5dbb37cdbdb47851ebdcd07ed3c135ffe3ec06a1624b3",
+          "path": "01_Древняя_Русь_IX-XII/02_Походы Святослава/00_Основная_A03.jpg",
+          "main": true
+        }
+      ],
+      "number": 2,
+      "folder": "01_Древняя_Русь_IX-XII/02_Походы Святослава",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "6E3EB2",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/D3E0AC9FFF669ADB4854A6BBF84642AA/xs3docsrcD3E0AC9FFF669ADB4854A6BBF84642AA_1_1694162710.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A01",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 1,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "vlad",
+      "period": 0,
+      "year": 988,
+      "title": "Русь при Владимире и Ярославе",
+      "learn": "Корсунь, Киев, Новгород, Полоцк; границы государства и расселение племён.",
+      "variants": [
+        {
+          "topic": "vlad",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A04",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 7,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 703,
+          "height": 748,
+          "sha256": "8f82a0a1dafa9bcb9fa05e460191777b6674fee1576b202759b2735b5f07bcba",
+          "path": "01_Древняя_Русь_IX-XII/03_Русь при Владимире и Ярославе/00_Основная_A04.jpg",
+          "main": true
+        }
+      ],
+      "number": 3,
+      "folder": "01_Древняя_Русь_IX-XII/03_Русь при Владимире и Ярославе",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "973F6E",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/8D20F39BCB0887C5472874C1873DF459/xs3docsrc8D20F39BCB0887C5472874C1873DF459_1_1694162726.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "0559FB",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/74198E9A38D8A0D34AE4B8C7018C61D1/xs3docsrc74198E9A38D8A0D34AE4B8C7018C61D1_1_1505916864.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "fragment",
+      "period": 0,
+      "year": 1150,
+      "title": "Политическая раздробленность Руси",
+      "learn": "Новгородская земля, Владимиро-Суздальское и Галицко-Волынское княжества; реки и города.",
+      "variants": [
+        {
+          "topic": "fragment",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A06",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 11,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 600,
+          "height": 780,
+          "sha256": "d2764957a5b3edb71fde7a224fa1bf9acd207de1ec5640b3febf521866435f63",
+          "path": "01_Древняя_Русь_IX-XII/04_Политическая раздробленность Руси/00_Основная_A06.jpg",
+          "main": true
+        }
+      ],
+      "number": 4,
+      "folder": "01_Древняя_Русь_IX-XII/04_Политическая раздробленность Руси",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "40707D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/A0F233184CC7A3B14484A9706B989F6D/xs3docsrcA0F233184CC7A3B14484A9706B989F6D_1_1639399119.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A05",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 9,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "kalka",
+      "period": 1,
+      "year": 1223,
+      "title": "Битва на Калке",
+      "learn": "Направление отхода русско-половецких войск; монгольское наступление; 1223 год.",
+      "variants": [
+        {
+          "topic": "kalka",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S02",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 2,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "e91dbf0f0f3ff0c56bbc0fae8d82d8ea138d19a73027bd330aa2511cf6153f50",
+          "path": "02_Русь_XIII-XV/05_Битва на Калке/00_Основная_S02.jpg",
+          "main": true
+        }
+      ],
+      "number": 5,
+      "folder": "02_Русь_XIII-XV/05_Битва на Калке",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "baty",
+      "period": 1,
+      "year": 1237,
+      "title": "Нашествие Батыя на Русь",
+      "learn": "Походы 1237-1238 и 1239-1240; Рязань, Коломна, Сить, Козельск, Киев.",
+      "variants": [
+        {
+          "topic": "baty",
+          "source": "Открытый банк ФИПИ",
+          "code": "040FD9",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/767797ADA707A330429EA56494A0E76C/xs3docsrc767797ADA707A330429EA56494A0E76C_2_1662118630.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 623,
+          "height": 658,
+          "sha256": "c906ab72e29769ea77d96e66b899b66377649c339cf6c69645f7e89097d92378",
+          "path": "02_Русь_XIII-XV/06_Нашествие Батыя на Русь/00_Основная_040FD9.jpg",
+          "main": true
+        },
+        {
+          "topic": "baty",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S06",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 6,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "df987587068848c307ea03287a8a6171c4c0a92e6f1c0d45f66a54fc6c4f8575",
+          "path": "02_Русь_XIII-XV/06_Нашествие Батыя на Русь/Варианты/S06.jpg",
+          "main": false
+        }
+      ],
+      "number": 6,
+      "folder": "02_Русь_XIII-XV/06_Нашествие Батыя на Русь",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "BA2929",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/8CDD91FC8735B6954E5912804D0DBD2B/xs3docsrc8CDD91FC8735B6954E5912804D0DBD2B_1_1639398925.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "AA47ED",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/39B2AE560ED587764D07FEC45F5547F8/xs3docsrc39B2AE560ED587764D07FEC45F5547F8_1_1646824560.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S05",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 5,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": "Дополнительная карта показывает поход монголов в более широком евразийском масштабе."
+    },
+    {
+      "key": "nevsky",
+      "period": 1,
+      "year": 1240,
+      "title": "Александр Невский — борьба на северо-западе",
+      "learn": "Нева, Ладога, Псков, Чудское озеро; шведские и немецкие войска; 1240 и 1242 годы.",
+      "variants": [
+        {
+          "topic": "nevsky",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A08",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 15,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 738,
+          "height": 753,
+          "sha256": "023d47e9c21ef7ba9193a4dd5f916de7060b7fda7f4a9137e63136ba0a6c115d",
+          "path": "02_Русь_XIII-XV/07_Александр Невский — борьба на северо-западе/00_Основная_A08.jpg",
+          "main": true
+        }
+      ],
+      "number": 7,
+      "folder": "02_Русь_XIII-XV/07_Александр Невский — борьба на северо-западе",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "640168",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/51920D98E105BD0242EC5599345CE9A5/xs3docsrc51920D98E105BD0242EC5599345CE9A5_1_1399979652.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "5C276C",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/EBA80C2F4DDEBB7E496C29B34C8A7066/xs3docsrcEBA80C2F4DDEBB7E496C29B34C8A7066_1_1646824538.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A07",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 13,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S07",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 7,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "neva",
+      "period": 1,
+      "year": 1240,
+      "title": "Невская битва — схема сражения",
+      "learn": "Устье Ижоры, Нева, русский лагерь и шведские корабли; 1240 год.",
+      "variants": [
+        {
+          "topic": "neva",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S03",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 3,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "38b3f16fc9d9ce403bcd391afbc66a379db822fb52674d1b626ad4ba2bf57e78",
+          "path": "02_Русь_XIII-XV/08_Невская битва — схема сражения/00_Основная_S03.jpg",
+          "main": true
+        }
+      ],
+      "number": 8,
+      "folder": "02_Русь_XIII-XV/08_Невская битва — схема сражения",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "ice",
+      "period": 1,
+      "year": 1242,
+      "title": "Ледовое побоище — схема сражения",
+      "learn": "Чудское озеро, построение рыцарей, действия русских флангов; 1242 год.",
+      "variants": [
+        {
+          "topic": "ice",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S04",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 4,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "5c33171291bb04bc891b2b0838e6d9a90a805967a9b077483aec881f5f9685c6",
+          "path": "02_Русь_XIII-XV/09_Ледовое побоище — схема сражения/00_Основная_S04.jpg",
+          "main": true
+        }
+      ],
+      "number": 9,
+      "folder": "02_Русь_XIII-XV/09_Ледовое побоище — схема сражения",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "moscow",
+      "period": 1,
+      "year": 1300,
+      "title": "Возвышение Москвы в XIV веке",
+      "learn": "Присоединение Коломны, Можайска, Переяславля; Москва, Тверь и Владимир.",
+      "variants": [
+        {
+          "topic": "moscow",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A09",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 17,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 618,
+          "height": 799,
+          "sha256": "59e8514175cd5d78f67632c28269003bfd07f928b69add29ebbeea9b97c43557",
+          "path": "02_Русь_XIII-XV/10_Возвышение Москвы в XIV веке/00_Основная_A09.jpg",
+          "main": true
+        }
+      ],
+      "number": 10,
+      "folder": "02_Русь_XIII-XV/10_Возвышение Москвы в XIV веке",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "don",
+      "period": 1,
+      "year": 1380,
+      "title": "Дмитрий Донской и борьба с Ордой",
+      "learn": "Вожа, Куликово поле, поход Мамая, поход Тохтамыша; события 1378-1382 годов.",
+      "variants": [
+        {
+          "topic": "don",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A10",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 19,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 602,
+          "height": 745,
+          "sha256": "5fabb6524cc435aceca7dc75a261ee49490cb767013961df97015324103faea7",
+          "path": "02_Русь_XIII-XV/11_Дмитрий Донской и борьба с Ордой/00_Основная_A10.jpg",
+          "main": true
+        }
+      ],
+      "number": 11,
+      "folder": "02_Русь_XIII-XV/11_Дмитрий Донской и борьба с Ордой",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "237570",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/1FF45C53982880A2434B02038C9665B9/xs3docsrc1FF45C53982880A2434B02038C9665B9_1_1567679161.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "3C8F44",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/82177EBEC91A95A54BC39B1898E0E244/xs3docsrc82177EBEC91A95A54BC39B1898E0E244_1_1509620496.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "kulikovo",
+      "period": 1,
+      "year": 1380,
+      "title": "Куликовская битва — схема сражения",
+      "learn": "Дон, Непрядва, засадный полк; Дмитрий Донской и Мамай; 1380 год.",
+      "variants": [
+        {
+          "topic": "kulikovo",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A11",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 21,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 677,
+          "height": 677,
+          "sha256": "435f70374f2f068321341c5e3e2231c84fb0f5fab86c63b9a35d97dd66080ee7",
+          "path": "02_Русь_XIII-XV/12_Куликовская битва — схема сражения/00_Основная_A11.jpg",
+          "main": true
+        }
+      ],
+      "number": 12,
+      "folder": "02_Русь_XIII-XV/12_Куликовская битва — схема сражения",
+      "omitted_sources": [
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S09",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 9,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "feudal",
+      "period": 1,
+      "year": 1425,
+      "title": "Междоусобная война второй четверти XV века",
+      "learn": "Москва, Галич, Углич; Василий II, Юрий Дмитриевич, Дмитрий Шемяка.",
+      "variants": [
+        {
+          "topic": "feudal",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S10",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 10,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "b6bce55b897199bf0d0089c7ae1d69f1a7e1f4c6d3f7c9b7dee6fc5752b68f5c",
+          "path": "02_Русь_XIII-XV/13_Междоусобная война второй четверти XV века/00_Основная_S10.jpg",
+          "main": true
+        }
+      ],
+      "number": 13,
+      "folder": "02_Русь_XIII-XV/13_Междоусобная война второй четверти XV века",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "ivan3",
+      "period": 1,
+      "year": 1462,
+      "title": "Иван III — объединение земель и стояние на Угре",
+      "learn": "Новгород, Тверь, Угра; границы государства при Иване III; 1480 год.",
+      "variants": [
+        {
+          "topic": "ivan3",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A12",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 23,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 809,
+          "height": 852,
+          "sha256": "85e68a783045d618bc6d982e854716b63e37a16a7b4081d77410299407102a31",
+          "path": "02_Русь_XIII-XV/14_Иван III — объединение земель и стояние на Угре/00_Основная_A12.jpg",
+          "main": true
+        },
+        {
+          "topic": "ivan3",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S08",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 8,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "91464bbb148afcef6a8258f205d3fbd24b2f357975a58b6aa327562a4b108401",
+          "path": "02_Русь_XIII-XV/14_Иван III — объединение земель и стояние на Угре/Варианты/S08.jpg",
+          "main": false
+        }
+      ],
+      "number": 14,
+      "folder": "02_Русь_XIII-XV/14_Иван III — объединение земель и стояние на Угре",
+      "omitted_sources": [],
+      "additional_reason": "Дополнительная карта даёт общий обзор XIV-XV веков и отдельную схему стояния на Угре."
+    },
+    {
+      "key": "novgorod",
+      "period": 1,
+      "year": 1471,
+      "title": "Поход Ивана III на Новгород",
+      "learn": "Шелонь, Коростынь, движение московских войск; 1471 и 1478 годы.",
+      "variants": [
+        {
+          "topic": "novgorod",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A13",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 25,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1185,
+          "height": 692,
+          "sha256": "ef14d3d7b6ca78015a7d80745f97fd36083957ffc6f40445ef0ed8b569a31104",
+          "path": "02_Русь_XIII-XV/15_Поход Ивана III на Новгород/00_Основная_A13.jpg",
+          "main": true
+        }
+      ],
+      "number": 15,
+      "folder": "02_Русь_XIII-XV/15_Поход Ивана III на Новгород",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "west16",
+      "period": 2,
+      "year": 1500,
+      "title": "Русско-литовские войны начала XVI века",
+      "learn": "Смоленск, западные границы, походы московских и литовских войск.",
+      "variants": [
+        {
+          "topic": "west16",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S11",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 11,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "46bca8f1f4f8586c83eb7746319d982c1be18d555aea65479e896799b44ede65",
+          "path": "03_Россия_XVI-XVII/16_Русско-литовские войны начала XVI века/00_Основная_S11.jpg",
+          "main": true
+        }
+      ],
+      "number": 16,
+      "folder": "03_Россия_XVI-XVII/16_Русско-литовские войны начала XVI века",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "state",
+      "period": 2,
+      "year": 1533,
+      "title": "Рост Российского государства в XIV — начале XVI века",
+      "learn": "Изменение территории до 1533 года; Новгород, Тверь, Псков, Смоленск, Рязань.",
+      "variants": [
+        {
+          "topic": "state",
+          "source": "Открытый банк ФИПИ",
+          "code": "F0AA4A",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E422235B5D14AE2E44609C3E3449A206/xs3docsrcE422235B5D14AE2E44609C3E3449A206_1_1575630051.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 560,
+          "height": 791,
+          "sha256": "e7e7df9bc861e8040f3f7f9f8a83456e642d9ef8aa972375554b2f6cf173565b",
+          "path": "03_Россия_XVI-XVII/17_Рост Российского государства в XIV — начале XVI века/00_Основная_F0AA4A.jpg",
+          "main": true
+        }
+      ],
+      "number": 17,
+      "folder": "03_Россия_XVI-XVII/17_Рост Российского государства в XIV — начале XVI века",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "kazan",
+      "period": 2,
+      "year": 1552,
+      "title": "Присоединение Казанского и Астраханского ханств",
+      "learn": "Волга, Казань, Свияжск, Астрахань; Иван IV; 1552 и 1556 годы.",
+      "variants": [
+        {
+          "topic": "kazan",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A14",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 27,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 823,
+          "height": 835,
+          "sha256": "2ea6664a7ba9ab3c924dc130277d9cc81277d31b9856b29c718142f9f5d302a3",
+          "path": "03_Россия_XVI-XVII/18_Присоединение Казанского и Астраханского ханств/00_Основная_A14.jpg",
+          "main": true
+        }
+      ],
+      "number": 18,
+      "folder": "03_Россия_XVI-XVII/18_Присоединение Казанского и Астраханского ханств",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "2833E0",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/094894A76C98A71C4E900DCAFA20A760/xs3docsrc094894A76C98A71C4E900DCAFA20A760_1_1607435665.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "760AD6",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/305A3D62E66FBB9A47DDF15C26651808/xs3docsrc305A3D62E66FBB9A47DDF15C26651808_2_1734443685.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "E7C626",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/AEE7372D3B9F91534F1D390D84123929/xs3docsrcAEE7372D3B9F91534F1D390D84123929_1_1605006665.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "livonian",
+      "period": 2,
+      "year": 1558,
+      "title": "Ливонская война",
+      "learn": "Нарва, Дерпт, Полоцк, Псков; Ям-Запольское и Плюсское перемирия; 1558-1583 годы.",
+      "variants": [
+        {
+          "topic": "livonian",
+          "source": "Открытый банк ФИПИ",
+          "code": "C04390",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/5E2B48501523BDD24C2782AF3EC46860/xs3docsrc5E2B48501523BDD24C2782AF3EC46860_1_1662124020.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 606,
+          "height": 868,
+          "sha256": "17603762e2250084a82fb0f04de749820f8b2ffdf0928a8233f88efdffa292c1",
+          "path": "03_Россия_XVI-XVII/19_Ливонская война/00_Основная_C04390.jpg",
+          "main": true
+        }
+      ],
+      "number": 19,
+      "folder": "03_Россия_XVI-XVII/19_Ливонская война",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "1828BD",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/5DDD89EDE5EC8CA442CF179CB5227523/xs3docsrc5DDD89EDE5EC8CA442CF179CB5227523_1_1724833999.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "AA8CEA",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E2FC00991C2489B74AF5AF2896B81FA8/xs3docsrcE2FC00991C2489B74AF5AF2896B81FA8_1_1512735411.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "745989",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/6F3358BAEF86BC514AF2F8C99A204DA0/xs3docsrc6F3358BAEF86BC514AF2F8C99A204DA0_1_1575632095.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "DDCF28",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/759B3BF6F5A6B367413217D5AD7AB6F9/xs3docsrc759B3BF6F5A6B367413217D5AD7AB6F9_1_1606376674.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S12",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 12,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "ermak",
+      "period": 2,
+      "year": 1582,
+      "title": "Поход Ермака и Сибирское ханство",
+      "learn": "Тура, Тобол, Иртыш, Кашлык; Кучум; конец XVI века.",
+      "variants": [
+        {
+          "topic": "ermak",
+          "source": "Открытый банк ФИПИ",
+          "code": "E6070D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/C96418EE5B19BC064A0E4FEB0E9A1A30/xs3docsrcC96418EE5B19BC064A0E4FEB0E9A1A30_1_1695805889.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 456,
+          "sha256": "200575cdeb2890add1f65a61368e5608a410d764beaedadb8e9088704d48d4d6",
+          "path": "03_Россия_XVI-XVII/20_Поход Ермака и Сибирское ханство/00_Основная_E6070D.jpg",
+          "main": true
+        }
+      ],
+      "number": 20,
+      "folder": "03_Россия_XVI-XVII/20_Поход Ермака и Сибирское ханство",
+      "omitted_sources": [
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S13",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 13,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "smuta",
+      "period": 2,
+      "year": 1605,
+      "title": "Смута, интервенция и народные ополчения",
+      "learn": "Поход Лжедмитрия I, Смоленск, Нижний Новгород, Ярославль; Столбово и Деулино.",
+      "variants": [
+        {
+          "topic": "smuta",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A15",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 29,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 819,
+          "height": 835,
+          "sha256": "3248748654f2468d670c884551a049ae867a2cecb27ca24db5c131b4876fff24",
+          "path": "03_Россия_XVI-XVII/21_Смута, интервенция и народные ополчения/00_Основная_A15.jpg",
+          "main": true
+        }
+      ],
+      "number": 21,
+      "folder": "03_Россия_XVI-XVII/21_Смута, интервенция и народные ополчения",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "052944",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/301F7E33E02EBF98435CD9983CA52B9A/xs3docsrc301F7E33E02EBF98435CD9983CA52B9A_1_1667308564.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "9C7C31",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/DFC9AA1518DE9D9B42F5A7FB647B26BA/xs3docsrcEB53AAD650F7A9C944F5120978FF6D10_1_1705065259.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "1A3AB3",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/526C7478B779B89A4CBAE3A9EB8FCA8F/xs3docsrc526C7478B779B89A4CBAE3A9EB8FCA8F_1_1606378479.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A16",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 31,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S14",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 14,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "bolotnikov",
+      "period": 2,
+      "year": 1606,
+      "title": "Восстание Ивана Болотникова",
+      "learn": "Путивль, Кромы, Москва, Калуга, Тула; 1606-1607 годы.",
+      "variants": [
+        {
+          "topic": "bolotnikov",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A17",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 33,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 523,
+          "height": 683,
+          "sha256": "a59d1e12e4a81785617fa62a014f643eba5540659091d334c40725d6342d0f06",
+          "path": "03_Россия_XVI-XVII/22_Восстание Ивана Болотникова/00_Основная_A17.jpg",
+          "main": true
+        }
+      ],
+      "number": 22,
+      "folder": "03_Россия_XVI-XVII/22_Восстание Ивана Болотникова",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "ukraine",
+      "period": 2,
+      "year": 1648,
+      "title": "Богдан Хмельницкий и русско-польская война",
+      "learn": "Жёлтые Воды, Корсунь, Переяславль, Киев, Андрусово; 1648-1667 годы.",
+      "variants": [
+        {
+          "topic": "ukraine",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A19",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 37,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 715,
+          "height": 783,
+          "sha256": "e1d1148eae6b59352d64e233e64da4344b785ebff77ae34c59b74a0c214db8a5",
+          "path": "03_Россия_XVI-XVII/23_Богдан Хмельницкий и русско-польская война/00_Основная_A19.jpg",
+          "main": true
+        },
+        {
+          "topic": "ukraine",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S16",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 16,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "68ccde2df3a41023a9d1ebcae283e502559335c46ce43ed8f2c73c49e6288456",
+          "path": "03_Россия_XVI-XVII/23_Богдан Хмельницкий и русско-польская война/Варианты/S16.jpg",
+          "main": false
+        }
+      ],
+      "number": 23,
+      "folder": "03_Россия_XVI-XVII/23_Богдан Хмельницкий и русско-польская война",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "9E4FB2",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/0C066AAF19E0B52F4AF80E4816415858/xs3docsrc0C066AAF19E0B52F4AF80E4816415858_1_1633340397.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "BDCF37",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/CA1A9E4BEECD8E2B4F1C8D3425024A2D/xs3docsrcCA1A9E4BEECD8E2B4F1C8D3425024A2D_1_1661936573.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A18",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 35,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S15",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 15,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": "Дополнительная карта охватывает северный театр русско-польской войны 1654-1667 годов."
+    },
+    {
+      "key": "siberia",
+      "period": 2,
+      "year": 1648,
+      "title": "Освоение Сибири и Дальнего Востока",
+      "learn": "Обь, Енисей, Лена, Амур; Дежнёв, Поярков, Хабаров и землепроходцы.",
+      "variants": [
+        {
+          "topic": "siberia",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A23",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 45,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 955,
+          "height": 709,
+          "sha256": "9848ff30db938ff6344853957d0e54aa3805fcdde95d12570ca7d4ee059d8618",
+          "path": "03_Россия_XVI-XVII/24_Освоение Сибири и Дальнего Востока/00_Основная_A23.jpg",
+          "main": true
+        }
+      ],
+      "number": 24,
+      "folder": "03_Россия_XVI-XVII/24_Освоение Сибири и Дальнего Востока",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "razin",
+      "period": 2,
+      "year": 1670,
+      "title": "Восстание Степана Разина",
+      "learn": "Дон, Волга, Яицкий городок, Астрахань, Симбирск; 1667-1671 годы.",
+      "variants": [
+        {
+          "topic": "razin",
+          "source": "Демоверсия ФИПИ 2026",
+          "code": "DEMO2026",
+          "url": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2026/is_11_2026.zip",
+          "priority": 0,
+          "page": 6,
+          "document": "ФИПИ_2026_Демоверсия.pdf",
+          "width": 1268,
+          "height": 1887,
+          "sha256": "67a2ba6898edf16f3d0bd8d07177f2925c4465c76ef73bfbec106cedf1bcf609",
+          "path": "03_Россия_XVI-XVII/25_Восстание Степана Разина/00_Основная_DEMO2026.png",
+          "main": true
+        }
+      ],
+      "number": 25,
+      "folder": "03_Россия_XVI-XVII/25_Восстание Степана Разина",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "3AF206",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/F677A8543B1D9C8442EEFFDF406065D0/xs3docsrcF677A8543B1D9C8442EEFFDF406065D0_1_1543821192.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "A9A426",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/4BDC04B8E5BBB1BF44EFDBF17141C23F/xs3docsrc4BDC04B8E5BBB1BF44EFDBF17141C23F_1_1733409901.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A20",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 39,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S17",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 17,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "economy17",
+      "period": 2,
+      "year": 1682,
+      "title": "Хозяйство и торговля России в XVII веке",
+      "learn": "Архангельск, Москва, Тула; промысловые районы, ярмарки и торговые пути.",
+      "variants": [
+        {
+          "topic": "economy17",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A21",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 41,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 599,
+          "height": 853,
+          "sha256": "8fa33d6e492b7f0a2e27200da3a3d090eb2017dd8e5767bef9436a1b7d5df096",
+          "path": "03_Россия_XVI-XVII/26_Хозяйство и торговля России в XVII веке/00_Основная_A21.jpg",
+          "main": true
+        }
+      ],
+      "number": 26,
+      "folder": "03_Россия_XVI-XVII/26_Хозяйство и торговля России в XVII веке",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "A8DAD9",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/627DAE75C8A6A47E4B94307B38576C5C/xs3docsrc627DAE75C8A6A47E4B94307B38576C5C_1_1575628330.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A22",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 43,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "azov",
+      "period": 3,
+      "year": 1696,
+      "title": "Азовские походы — взятие Азова",
+      "learn": "Дон, Азов, флотилия Петра I; 1695-1696 годы.",
+      "variants": [
+        {
+          "topic": "azov",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S19",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 19,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "e31e51771fa5934bd9bbec13f3879864cbb2c5e3e03b4cf7ed0c6832f28614ed",
+          "path": "04_Россия_XVIII/27_Азовские походы — взятие Азова/00_Основная_S19.jpg",
+          "main": true
+        }
+      ],
+      "number": 27,
+      "folder": "04_Россия_XVIII/27_Азовские походы — взятие Азова",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "north",
+      "period": 3,
+      "year": 1700,
+      "title": "Северная война",
+      "learn": "Нарва, Петербург, Лесная, Полтава, Гангут, Ништадт; 1700-1721 годы.",
+      "variants": [
+        {
+          "topic": "north",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A24",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 47,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 612,
+          "height": 659,
+          "sha256": "d6be5648c241ea29284e26deacf722c6d9b578e2ff3e6514c4bd3051ba7cc974",
+          "path": "04_Россия_XVIII/28_Северная война/00_Основная_A24.jpg",
+          "main": true
+        }
+      ],
+      "number": 28,
+      "folder": "04_Россия_XVIII/28_Северная война",
+      "omitted_sources": [
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S18",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 18,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "narva",
+      "period": 3,
+      "year": 1700,
+      "title": "Сражение под Нарвой",
+      "learn": "Нарва и Нарова, русский лагерь, шведское наступление; 1700 год.",
+      "variants": [
+        {
+          "topic": "narva",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S20",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 20,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "53b6815d934a3d0afbea8a5972d2a4081294ecc612579ce377dfae65deb06976",
+          "path": "04_Россия_XVIII/29_Сражение под Нарвой/00_Основная_S20.jpg",
+          "main": true
+        }
+      ],
+      "number": 29,
+      "folder": "04_Россия_XVIII/29_Сражение под Нарвой",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "noteburg",
+      "period": 3,
+      "year": 1702,
+      "title": "Штурм Нотебурга",
+      "learn": "Нева и Ладожское озеро, крепость Орешек; 1702 год.",
+      "variants": [
+        {
+          "topic": "noteburg",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S21",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 21,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "35def4e1700d4bd46197b5a06fdd66dba7936f6405bb356b73855706a4932d27",
+          "path": "04_Россия_XVIII/30_Штурм Нотебурга/00_Основная_S21.jpg",
+          "main": true
+        }
+      ],
+      "number": 30,
+      "folder": "04_Россия_XVIII/30_Штурм Нотебурга",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "lesnaya",
+      "period": 3,
+      "year": 1708,
+      "title": "Сражение при Лесной",
+      "learn": "Положение русского отряда и шведского корпуса Левенгаупта; 1708 год.",
+      "variants": [
+        {
+          "topic": "lesnaya",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S22",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 22,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "f08153f922c986afe171e2e1fdd540a2d1afa270a4ed7737ffc340114a735296",
+          "path": "04_Россия_XVIII/31_Сражение при Лесной/00_Основная_S22.jpg",
+          "main": true
+        }
+      ],
+      "number": 31,
+      "folder": "04_Россия_XVIII/31_Сражение при Лесной",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "poltava",
+      "period": 3,
+      "year": 1709,
+      "title": "Полтавская битва",
+      "learn": "Редуты, русский лагерь, Ворскла; Пётр I и Карл XII; 1709 год.",
+      "variants": [
+        {
+          "topic": "poltava",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S23",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 23,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "50c07e366d7dea2e746081cd110b32cd143f4a6329c996156b2f268f3024438f",
+          "path": "04_Россия_XVIII/32_Полтавская битва/00_Основная_S23.jpg",
+          "main": true
+        }
+      ],
+      "number": 32,
+      "folder": "04_Россия_XVIII/32_Полтавская битва",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "gangut",
+      "period": 3,
+      "year": 1714,
+      "title": "Гангутское морское сражение",
+      "learn": "Гангутский полуостров, манёвр галерного флота; 1714 год.",
+      "variants": [
+        {
+          "topic": "gangut",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S24",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 24,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "e11fc82204052ce0080a99915a138e7ef59f36f485e3930bb479e9cb97d09911",
+          "path": "04_Россия_XVIII/33_Гангутское морское сражение/00_Основная_S24.jpg",
+          "main": true
+        }
+      ],
+      "number": 33,
+      "folder": "04_Россия_XVIII/33_Гангутское морское сражение",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "rt1735",
+      "period": 3,
+      "year": 1735,
+      "title": "Русско-турецкая война 1735-1739",
+      "learn": "Азов, Очаков, Бахчисарай, Хотин; Анна Иоанновна, Миних и Ласси.",
+      "variants": [
+        {
+          "topic": "rt1735",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A25",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 49,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 838,
+          "height": 649,
+          "sha256": "aa72e2e33f28adaa94699d823cf536c2e7034d18cbbd28d89f34e830da143bae",
+          "path": "04_Россия_XVIII/34_Русско-турецкая война 1735-1739/00_Основная_A25.jpg",
+          "main": true
+        }
+      ],
+      "number": 34,
+      "folder": "04_Россия_XVIII/34_Русско-турецкая война 1735-1739",
+      "omitted_sources": [
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S26",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 26,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "seven",
+      "period": 3,
+      "year": 1756,
+      "title": "Семилетняя война",
+      "learn": "Гросс-Егерсдорф, Кунерсдорф, Берлин, Кольберг; 1756-1763 годы.",
+      "variants": [
+        {
+          "topic": "seven",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A27",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 53,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 985,
+          "height": 812,
+          "sha256": "57e2013ed26cb51f5f170a6cae71d4b39ae98d3acc049e22d8d265239ecac45a",
+          "path": "04_Россия_XVIII/35_Семилетняя война/00_Основная_A27.jpg",
+          "main": true
+        }
+      ],
+      "number": 35,
+      "folder": "04_Россия_XVIII/35_Семилетняя война",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "A67E52",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/CFB053206D5EAEA34EEA9918D1B9AFFD/xs3docsrcCFB053206D5EAEA34EEA9918D1B9AFFD_1_1536045957.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A26",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 51,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "gross",
+      "period": 3,
+      "year": 1757,
+      "title": "Сражение при Гросс-Егерсдорфе",
+      "learn": "Река Прегель, русская и прусская армии; 1757 год.",
+      "variants": [
+        {
+          "topic": "gross",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S25",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 25,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "a977d4171f312d71510ffcd6e98b2dd1d6eb44d17a1ac8b05be0f6acfa6e9df7",
+          "path": "04_Россия_XVIII/36_Сражение при Гросс-Егерсдорфе/00_Основная_S25.jpg",
+          "main": true
+        }
+      ],
+      "number": 36,
+      "folder": "04_Россия_XVIII/36_Сражение при Гросс-Егерсдорфе",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "rt1768",
+      "period": 3,
+      "year": 1768,
+      "title": "Русско-турецкая война 1768-1774",
+      "learn": "Ларга, Кагул, Крым, Чесма; Кючук-Кайнарджийский мир.",
+      "variants": [
+        {
+          "topic": "rt1768",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S27",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 27,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "130ead2fd3bacdfad4e4047ee277ab3ceff222988b55b89d58461c760fe1aa38",
+          "path": "04_Россия_XVIII/37_Русско-турецкая война 1768-1774/00_Основная_S27.jpg",
+          "main": true
+        }
+      ],
+      "number": 37,
+      "folder": "04_Россия_XVIII/37_Русско-турецкая война 1768-1774",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "pugachev",
+      "period": 3,
+      "year": 1773,
+      "title": "Восстание Емельяна Пугачёва",
+      "learn": "Яик, Оренбург, Казань, Царицын; 1773-1775 годы.",
+      "variants": [
+        {
+          "topic": "pugachev",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A28",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 55,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 920,
+          "height": 820,
+          "sha256": "5b6007a4a8cbbd5f9ad254b000526db6e502d0030d177a46ad53c1a81b34babd",
+          "path": "04_Россия_XVIII/38_Восстание Емельяна Пугачёва/00_Основная_A28.jpg",
+          "main": true
+        }
+      ],
+      "number": 38,
+      "folder": "04_Россия_XVIII/38_Восстание Емельяна Пугачёва",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "39BD5D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/832FF240FCC7BD8C41B6190979C12B66/xs3docsrc832FF240FCC7BD8C41B6190979C12B66_1_1575553759.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A29",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 57,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S28",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 28,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "rt1787",
+      "period": 3,
+      "year": 1787,
+      "title": "Русско-турецкая война 1787-1791",
+      "learn": "Очаков, Измаил, Фокшаны, Рымник, Калиакрия; Суворов, Ушаков, Ясский мир.",
+      "variants": [
+        {
+          "topic": "rt1787",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A30",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 59,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1022,
+          "height": 665,
+          "sha256": "f481aaefbc8b07bd3fa8cc9aa94b3fd6effa192b2eefb41974f569b3ef1f4d42",
+          "path": "04_Россия_XVIII/39_Русско-турецкая война 1787-1791/00_Основная_A30.jpg",
+          "main": true
+        }
+      ],
+      "number": 39,
+      "folder": "04_Россия_XVIII/39_Русско-турецкая война 1787-1791",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "11E28A",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E446159356E2B84E4F0CD9717ECEB848/xs3docsrcE446159356E2B84E4F0CD9717ECEB848_1_1694162569.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "4D4DD3",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/692B1927FC2BB1064162330FAE3C18B0/xs3docsrc692B1927FC2BB1064162330FAE3C18B0_1_1397218747.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "1383F9",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/61320ECFFAA5BC93495412380695DDC9/xs3docsrc61320ECFFAA5BC93495412380695DDC9_5_1761993664.png",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "territory18",
+      "period": 3,
+      "year": 1800,
+      "title": "Территориальные приобретения России в XVIII веке",
+      "learn": "Прибалтика, разделы Речи Посполитой, Северное Причерноморье и Крым.",
+      "variants": [
+        {
+          "topic": "territory18",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A31",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 61,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 768,
+          "height": 813,
+          "sha256": "b40623fa99b6a1aa067fc8bc2b98507b7c01d4ff5ecbc20accf1c84944373888",
+          "path": "04_Россия_XVIII/40_Территориальные приобретения России в XVIII веке/00_Основная_A31.jpg",
+          "main": true
+        }
+      ],
+      "number": 40,
+      "folder": "04_Россия_XVIII/40_Территориальные приобретения России в XVIII веке",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "26ACC4",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/124DE1A4B2ECADF54D825080EC6E9AAA/xs3docsrc124DE1A4B2ECADF54D825080EC6E9AAA_1_1481904305.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "napoleon",
+      "period": 4,
+      "year": 1805,
+      "title": "Войны с Наполеоном 1805-1807",
+      "learn": "Аустерлиц, Прейсиш-Эйлау, Фридланд, Тильзит; Александр I.",
+      "variants": [
+        {
+          "topic": "napoleon",
+          "source": "Открытый банк ФИПИ",
+          "code": "950DB7",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/4DE6915B773CA818437C1EC0D3763688/xs3docsrc4DE6915B773CA818437C1EC0D3763688_1_1756301241.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 583,
+          "sha256": "536ffdc2d8c28e664a926f9bb7d90995c8c69ed54dc78ef7cddd3101fd6a0d8d",
+          "path": "05_Россия_XIX-1913/41_Войны с Наполеоном 1805-1807/00_Основная_950DB7.jpg",
+          "main": true
+        }
+      ],
+      "number": 41,
+      "folder": "05_Россия_XIX-1913/41_Войны с Наполеоном 1805-1807",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "C1A1F3",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/362B8F89E0D49AF144E54CC68B5FE1E2/xs3docsrc362B8F89E0D49AF144E54CC68B5FE1E2_1_1536046094.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "forces1812",
+      "period": 4,
+      "year": 1812,
+      "title": "Расположение армий перед войной 1812 года",
+      "learn": "Неман, Вильно, Гродно; армии Барклая де Толли, Багратиона и Тормасова.",
+      "variants": [
+        {
+          "topic": "forces1812",
+          "source": "Открытый банк ФИПИ",
+          "code": "C5DE1B",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/4DEB259272279235404DBBD637B85EF6/xs3docsrc4DEB259272279235404DBBD637B85EF6_1_1518609173.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 668,
+          "sha256": "6c50c7735d553f29991e1d72f5b3db9eae7fa54bab97ea9fe6a3e08013c70fd7",
+          "path": "05_Россия_XIX-1913/42_Расположение армий перед войной 1812 года/00_Основная_C5DE1B.jpg",
+          "main": true
+        }
+      ],
+      "number": 42,
+      "folder": "05_Россия_XIX-1913/42_Расположение армий перед войной 1812 года",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "war1812",
+      "period": 4,
+      "year": 1812,
+      "title": "Отечественная война 1812 года — наступление французов",
+      "learn": "Неман, Смоленск, Бородино, Москва; соединение русских армий.",
+      "variants": [
+        {
+          "topic": "war1812",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A32",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 63,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1049,
+          "height": 668,
+          "sha256": "4e4c3f7e2c615edcaeff02f6e664c8e12c39180f9ba7a5a16b4dae8c60fee639",
+          "path": "05_Россия_XIX-1913/43_Отечественная война 1812 года — наступление французов/00_Основная_A32.jpg",
+          "main": true
+        }
+      ],
+      "number": 43,
+      "folder": "05_Россия_XIX-1913/43_Отечественная война 1812 года — наступление французов",
+      "omitted_sources": [
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A33",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 65,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S29",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 29,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "borodino",
+      "period": 4,
+      "year": 1812,
+      "title": "Бородинское сражение",
+      "learn": "Колоча, батарея Раевского, Багратионовы флеши, Утица; 26 августа 1812 года по старому стилю.",
+      "variants": [
+        {
+          "topic": "borodino",
+          "source": "Открытый банк ФИПИ",
+          "code": "7B0E67",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/90E7DA025197B5694AEED63FE1265778/xs3docsrc90E7DA025197B5694AEED63FE1265778_1_1665394802.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 671,
+          "sha256": "7f3e4d7a6f2a6e7fe10b73defa9befdfb06bffad70cafb6b95ef0efe462c336f",
+          "path": "05_Россия_XIX-1913/44_Бородинское сражение/00_Основная_7B0E67.jpg",
+          "main": true
+        }
+      ],
+      "number": 44,
+      "folder": "05_Россия_XIX-1913/44_Бородинское сражение",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "tarutino",
+      "period": 4,
+      "year": 1812,
+      "title": "Тарутинский манёвр",
+      "learn": "Москва, Рязанская и Калужская дороги, Подольск, Тарутино; Кутузов.",
+      "variants": [
+        {
+          "topic": "tarutino",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A34",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 67,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 682,
+          "height": 755,
+          "sha256": "edf0c2690b165b4323f9c9ab241b3adf7078670cdd968d327a8631661c1757fc",
+          "path": "05_Россия_XIX-1913/45_Тарутинский манёвр/00_Основная_A34.jpg",
+          "main": true
+        }
+      ],
+      "number": 45,
+      "folder": "05_Россия_XIX-1913/45_Тарутинский манёвр",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "retreat1812",
+      "period": 4,
+      "year": 1812,
+      "title": "Контрнаступление русской армии в 1812 году",
+      "learn": "Тарутино, Малоярославец, Красный, Березина; отступление Наполеона.",
+      "variants": [
+        {
+          "topic": "retreat1812",
+          "source": "Открытый банк ФИПИ",
+          "code": "38F31F",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/7DD13A207C52843E4BB7E0FDEFE58AAE/xs3docsrc7DD13A207C52843E4BB7E0FDEFE58AAE_1_1631627980.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 394,
+          "sha256": "2cc2841cc2fa5af66ee261b0972ee906b338f1feb640f6fb94df31aa02f71691",
+          "path": "05_Россия_XIX-1913/46_Контрнаступление русской армии в 1812 году/00_Основная_38F31F.jpg",
+          "main": true
+        }
+      ],
+      "number": 46,
+      "folder": "05_Россия_XIX-1913/46_Контрнаступление русской армии в 1812 году",
+      "omitted_sources": [
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S30",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 30,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "decembrists",
+      "period": 4,
+      "year": 1825,
+      "title": "Восстание декабристов",
+      "learn": "Сенатская площадь, Нева, Исаакиевский мост; 14 декабря 1825 года.",
+      "variants": [
+        {
+          "topic": "decembrists",
+          "source": "Открытый банк ФИПИ",
+          "code": "F1BE78",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/B5D6C38BE44E819147C078D52D0B9A79/xs3docsrcB5D6C38BE44E819147C078D52D0B9A79_1_1646824567.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 375,
+          "height": 426,
+          "sha256": "7381a5d86cbf0aab7f054c5185e39e754f8db6c081a2ce665c4a03d2718f1a5e",
+          "path": "05_Россия_XIX-1913/47_Восстание декабристов/00_Основная_F1BE78.jpg",
+          "main": true
+        }
+      ],
+      "number": 47,
+      "folder": "05_Россия_XIX-1913/47_Восстание декабристов",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "rt1828",
+      "period": 4,
+      "year": 1828,
+      "title": "Русско-турецкая война 1828-1829",
+      "learn": "Дунай, Балканы, Адрианополь, Карс и Эрзерум.",
+      "variants": [
+        {
+          "topic": "rt1828",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S31",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 31,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "1fb73e56ed83cad430185d9c3866050a00b3475342b3c00b2bcdd42cfa7b3c2c",
+          "path": "05_Россия_XIX-1913/48_Русско-турецкая война 1828-1829/00_Основная_S31.jpg",
+          "main": true
+        }
+      ],
+      "number": 48,
+      "folder": "05_Россия_XIX-1913/48_Русско-турецкая война 1828-1829",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "economy19",
+      "period": 4,
+      "year": 1850,
+      "title": "Территория и хозяйство России в первой половине XIX века",
+      "learn": "Финляндия, Царство Польское, Кавказ; промышленные районы, ярмарки и железные дороги.",
+      "variants": [
+        {
+          "topic": "economy19",
+          "source": "Открытый банк ФИПИ",
+          "code": "1A9B27",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/6AB30C31FDB8862440E0A3280369EB03/xs3docsrc6AB30C31FDB8862440E0A3280369EB03_1_1758804520.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 731,
+          "sha256": "2a845bc6f1fdb12a8667e11809b968218de23623c6783ee24bfc2e5bd236573e",
+          "path": "05_Россия_XIX-1913/49_Территория и хозяйство России в первой половине XIX века/00_Основная_1A9B27.jpg",
+          "main": true
+        }
+      ],
+      "number": 49,
+      "folder": "05_Россия_XIX-1913/49_Территория и хозяйство России в первой половине XIX века",
+      "omitted_sources": [
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A35",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 69,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "crimean",
+      "period": 4,
+      "year": 1853,
+      "title": "Крымская война",
+      "learn": "Севастополь, Синоп, Карс, Дунайский и Кавказский театры; 1853-1856 годы.",
+      "variants": [
+        {
+          "topic": "crimean",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A36",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 71,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 798,
+          "height": 715,
+          "sha256": "007f5c1afcf2d9aea8159cea30aeaa548f07387a659f2aa1f90ea86e65c104d8",
+          "path": "05_Россия_XIX-1913/50_Крымская война/00_Основная_A36.jpg",
+          "main": true
+        },
+        {
+          "topic": "crimean",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A38",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 75,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 966,
+          "height": 593,
+          "sha256": "69d12602ef0a6ffdd5c66795e2ea1838d48e104c291679f1af1384a7a95b3ef2",
+          "path": "05_Россия_XIX-1913/50_Крымская война/Варианты/A38.jpg",
+          "main": false
+        }
+      ],
+      "number": 50,
+      "folder": "05_Россия_XIX-1913/50_Крымская война",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "288BFF",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/1A70B7A093E7865341417057C11EC558/xs3docsrc1A70B7A093E7865341417057C11EC558_1_1536046027.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "DA927D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/BC96710EAE2ABB3E41430061F51675AA/xs3docsrcBC96710EAE2ABB3E41430061F51675AA_1_1646824545.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A37",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 73,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S32",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 32,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": "Дополнительная карта подробно показывает расположение войск в начале Крымской войны."
+    },
+    {
+      "key": "rt1877",
+      "period": 4,
+      "year": 1877,
+      "title": "Русско-турецкая война 1877-1878",
+      "learn": "Плевна, Шипка, Сан-Стефано, Карс; балканское и кавказское направления.",
+      "variants": [
+        {
+          "topic": "rt1877",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S33",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 33,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "7ffedd93e902981dcdca0613514834ef26f5ed1808c219784d30fabe36cad22f",
+          "path": "05_Россия_XIX-1913/51_Русско-турецкая война 1877-1878/00_Основная_S33.jpg",
+          "main": true
+        }
+      ],
+      "number": 51,
+      "folder": "05_Россия_XIX-1913/51_Русско-турецкая война 1877-1878",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "transsib",
+      "period": 4,
+      "year": 1891,
+      "title": "Транссибирская магистраль и КВЖД",
+      "learn": "Челябинск, Омск, Иркутск, Чита, Харбин, Владивосток, Порт-Артур.",
+      "variants": [
+        {
+          "topic": "transsib",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A40",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 79,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1159,
+          "height": 689,
+          "sha256": "506e8cdebbf14e8b41591132a5a923e0d799fd8d0ad519409a0b1042fd8b0b0f",
+          "path": "05_Россия_XIX-1913/52_Транссибирская магистраль и КВЖД/00_Основная_A40.jpg",
+          "main": true
+        }
+      ],
+      "number": 52,
+      "folder": "05_Россия_XIX-1913/52_Транссибирская магистраль и КВЖД",
+      "omitted_sources": [
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A39",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 77,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "japan1904",
+      "period": 4,
+      "year": 1904,
+      "title": "Русско-японская война",
+      "learn": "Порт-Артур, Ляоян, Мукден, Цусима, Сахалин; 1904-1905 годы.",
+      "variants": [
+        {
+          "topic": "japan1904",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A41",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 81,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 755,
+          "height": 820,
+          "sha256": "ff0cfdbcbb9218ce7cb00d4a9d0f667824020f019d97fdea25b1a824c09e8f35",
+          "path": "05_Россия_XIX-1913/53_Русско-японская война/00_Основная_A41.jpg",
+          "main": true
+        }
+      ],
+      "number": 53,
+      "folder": "05_Россия_XIX-1913/53_Русско-японская война",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "4339F0",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E91E0660CB39BDA8417D9225519650F8/xs3docsrcE91E0660CB39BDA8417D9225519650F8_7_1761994407.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "1288E2",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/47C9A9033A5C8EEA4E74090C4B734C95/xs3docsrcC56F6F3ADC60829F416CBC4F5CD84873_1_1704977694.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "EE26A1",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/721A4D5AB99FB88E4D740AC3CE607692/xs3docsrc721A4D5AB99FB88E4D740AC3CE607692_1_1646824553.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A42",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 83,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S34",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 34,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "east1914",
+      "period": 5,
+      "year": 1914,
+      "title": "Восточно-Прусская операция 1914 года",
+      "learn": "Гумбиннен, Танненберг; армии Самсонова и Ренненкампфа.",
+      "variants": [
+        {
+          "topic": "east1914",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A43",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 85,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 800,
+          "height": 802,
+          "sha256": "ed4518fa3619056427d0c3e14f541f0ddca6012a91462ce46b12c39ce36fddbb",
+          "path": "06_Первая_мировая_и_Гражданская/54_Восточно-Прусская операция 1914 года/00_Основная_A43.jpg",
+          "main": true
+        }
+      ],
+      "number": 54,
+      "folder": "06_Первая_мировая_и_Гражданская/54_Восточно-Прусская операция 1914 года",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "ww1",
+      "period": 5,
+      "year": 1914,
+      "title": "Первая мировая война — европейские фронты",
+      "learn": "Восточная Пруссия, Галиция, Польша, Балканы; фронты и военные блоки.",
+      "variants": [
+        {
+          "topic": "ww1",
+          "source": "Открытый банк ФИПИ",
+          "code": "D36E80",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/344B13D04D7EB7E8466F7032BFC58C1A/xs3docsrcF72DEC5FFD1B98DC4EB6D7DA2AEAF5FC_1_1704981614.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 842,
+          "sha256": "244922477ff251b9a839394a253525c12c6763d9f6ebd09ae55f737d64281a5a",
+          "path": "06_Первая_мировая_и_Гражданская/55_Первая мировая война — европейские фронты/00_Основная_D36E80.jpg",
+          "main": true
+        },
+        {
+          "topic": "ww1",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S35",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 35,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "bdce189f38dbf8a9af7f558f1728b4fbebd5925127fe3707b44eb10b5ddfad04",
+          "path": "06_Первая_мировая_и_Гражданская/55_Первая мировая война — европейские фронты/Варианты/S35.jpg",
+          "main": false
+        }
+      ],
+      "number": 55,
+      "folder": "06_Первая_мировая_и_Гражданская/55_Первая мировая война — европейские фронты",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "D1A00D",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/F747CDBF46BC948E4DBEDC5E93A19157/xs3docsrcF747CDBF46BC948E4DBEDC5E93A19157_1_1479308582.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A46",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 91,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A44",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 87,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S36",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 36,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": "Дополнительная карта показывает всю Европу, включая Западный фронт."
+    },
+    {
+      "key": "brest",
+      "period": 5,
+      "year": 1918,
+      "title": "Брестский мир и оккупация 1918 года",
+      "learn": "Брест-Литовск, отторгнутые территории, продвижение германских войск.",
+      "variants": [
+        {
+          "topic": "brest",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A45",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 89,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 609,
+          "height": 739,
+          "sha256": "bb7b245b9c6aa0cdc91dd3d869078b691e3b95cd91e1d2024a5b70740d356933",
+          "path": "06_Первая_мировая_и_Гражданская/56_Брестский мир и оккупация 1918 года/00_Основная_A45.jpg",
+          "main": true
+        }
+      ],
+      "number": 56,
+      "folder": "06_Первая_мировая_и_Гражданская/56_Брестский мир и оккупация 1918 года",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "kolchak",
+      "period": 5,
+      "year": 1919,
+      "title": "Гражданская война — Восточный фронт и Колчак",
+      "learn": "Уфа, Пермь, Омск; наступление белых и контрнаступление Красной армии.",
+      "variants": [
+        {
+          "topic": "kolchak",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A49",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 97,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 816,
+          "height": 642,
+          "sha256": "76c7fd48fa51507174df0e61d56faaa9926430cbd56f8b63344b2762c75b9bdf",
+          "path": "06_Первая_мировая_и_Гражданская/57_Гражданская война — Восточный фронт и Колчак/00_Основная_A49.jpg",
+          "main": true
+        }
+      ],
+      "number": 57,
+      "folder": "06_Первая_мировая_и_Гражданская/57_Гражданская война — Восточный фронт и Колчак",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "denikin",
+      "period": 5,
+      "year": 1919,
+      "title": "Гражданская война — поход Деникина на Москву",
+      "learn": "Харьков, Курск, Орёл, Воронеж; Южный фронт в 1919 году.",
+      "variants": [
+        {
+          "topic": "denikin",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A48",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 95,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 565,
+          "height": 835,
+          "sha256": "a5b3c5727237cf9d90f80ef0823b5159bcf73aad8833f6be936efc538eef0bc7",
+          "path": "06_Первая_мировая_и_Гражданская/58_Гражданская война — поход Деникина на Москву/00_Основная_A48.jpg",
+          "main": true
+        }
+      ],
+      "number": 58,
+      "folder": "06_Первая_мировая_и_Гражданская/58_Гражданская война — поход Деникина на Москву",
+      "omitted_sources": [
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A47",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 93,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "poland1920",
+      "period": 5,
+      "year": 1920,
+      "title": "Советско-польская война",
+      "learn": "Киев, Минск, Варшава; поход Красной армии и Рижский мир.",
+      "variants": [
+        {
+          "topic": "poland1920",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S37",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 37,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "1968be4adde5d8fca6349b6258464273ce5501a231e406fef5582269e800ed8e",
+          "path": "06_Первая_мировая_и_Гражданская/59_Советско-польская война/00_Основная_S37.jpg",
+          "main": true
+        }
+      ],
+      "number": 59,
+      "folder": "06_Первая_мировая_и_Гражданская/59_Советско-польская война",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "ww2early",
+      "period": 6,
+      "year": 1939,
+      "title": "Европа в начале Второй мировой войны",
+      "learn": "Польша, Франция, Норвегия; государства Оси и изменения границ СССР в 1939-1940 годах.",
+      "variants": [
+        {
+          "topic": "ww2early",
+          "source": "Открытый банк ФИПИ",
+          "code": "29DB25",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E610F1751AD7923B4DB5E121693B3298/xs3docsrcE610F1751AD7923B4DB5E121693B3298_2_1733220002.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 626,
+          "height": 849,
+          "sha256": "1b9267adcb60df52e036c9a4c382a3f9438f5f9cc0149609ed825a9884510406",
+          "path": "07_Вторая_мировая_и_ВОВ/60_Европа в начале Второй мировой войны/00_Основная_29DB25.jpg",
+          "main": true
+        }
+      ],
+      "number": 60,
+      "folder": "07_Вторая_мировая_и_ВОВ/60_Европа в начале Второй мировой войны",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "finland",
+      "period": 6,
+      "year": 1939,
+      "title": "Советско-финляндская война",
+      "learn": "Карельский перешеек, Выборг, линия Маннергейма; 1939-1940 годы.",
+      "variants": [
+        {
+          "topic": "finland",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A50",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 99,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 956,
+          "height": 778,
+          "sha256": "9d444967cc7ff0540afe8c3ebb730d3cd680054a9b20f961a551cea95b701c44",
+          "path": "07_Вторая_мировая_и_ВОВ/61_Советско-финляндская война/00_Основная_A50.jpg",
+          "main": true
+        }
+      ],
+      "number": 61,
+      "folder": "07_Вторая_мировая_и_ВОВ/61_Советско-финляндская война",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "early1941",
+      "period": 6,
+      "year": 1941,
+      "title": "Начало Великой Отечественной войны",
+      "learn": "Приграничные сражения, Минск, Смоленск, Киев, Ленинград; лето-осень 1941 года.",
+      "variants": [
+        {
+          "topic": "early1941",
+          "source": "Открытый банк ФИПИ",
+          "code": "67D842",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/4E76B9BF7DC8A40B4D63DDDC1D77D73B/xs3docsrc4E76B9BF7DC8A40B4D63DDDC1D77D73B_1_1483028975.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 908,
+          "sha256": "9acb0704a558da20c6ee59302e679f85d47b45accb285a876d2c86f4d228ecf8",
+          "path": "07_Вторая_мировая_и_ВОВ/62_Начало Великой Отечественной войны/00_Основная_67D842.jpg",
+          "main": true
+        },
+        {
+          "topic": "early1941",
+          "source": "Открытый банк ФИПИ",
+          "code": "EFE757",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/DD4BDBB2404AA38E4CD755C55B30D7AB/xs3docsrcDD4BDBB2404AA38E4CD755C55B30D7AB_1_1669801037.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 625,
+          "height": 758,
+          "sha256": "53752f83032a189bbc6e34ed9cab4a02e0787031b085aaec5e8662f87810e2b6",
+          "path": "07_Вторая_мировая_и_ВОВ/62_Начало Великой Отечественной войны/Варианты/EFE757.jpg",
+          "main": false
+        }
+      ],
+      "number": 62,
+      "folder": "07_Вторая_мировая_и_ВОВ/62_Начало Великой Отечественной войны",
+      "omitted_sources": [
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A51",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 101,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A52",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 103,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S38",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 38,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": "Дополнительная схема выделяет направления главных ударов и районы окружения 1941 года."
+    },
+    {
+      "key": "moscow1941",
+      "period": 6,
+      "year": 1941,
+      "title": "Битва за Москву и зимнее контрнаступление",
+      "learn": "Тула, Калинин, Москва; переход в контрнаступление в декабре 1941 года.",
+      "variants": [
+        {
+          "topic": "moscow1941",
+          "source": "Открытый банк ФИПИ",
+          "code": "86B257",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/8B2E15E8B1FE837D49F2DB4DC444BBDF/xs3docsrc8B2E15E8B1FE837D49F2DB4DC444BBDF_1_1630405555.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 623,
+          "height": 894,
+          "sha256": "b83c5a6ccf6a8f2bc336ce9554997a606ba80fb1f924933f349d8eff19ab4174",
+          "path": "07_Вторая_мировая_и_ВОВ/63_Битва за Москву и зимнее контрнаступление/00_Основная_86B257.jpg",
+          "main": true
+        }
+      ],
+      "number": 63,
+      "folder": "07_Вторая_мировая_и_ВОВ/63_Битва за Москву и зимнее контрнаступление",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "EB5160",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/B768F65DD1669B26459E531DC1AFAB71/xs3docsrcB768F65DD1669B26459E531DC1AFAB71_1_1694162499.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "F40BE2",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/032F5185F522A896447E2C483D76043F/xs3docsrc032F5185F522A896447E2C483D76043F_1_1575560368.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "30A2AD",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/1E64C28794E9A19540BBA11C87FD4B56/xs3docsrc1E64C28794E9A19540BBA11C87FD4B56_1_1481298727.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "war1942",
+      "period": 6,
+      "year": 1942,
+      "title": "Военные действия 1942 года",
+      "learn": "Харьков, Дон, Кавказ, Сталинград; немецкое летнее наступление.",
+      "variants": [
+        {
+          "topic": "war1942",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S39",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 39,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "28923e53f33e9f2f5fabefd4e6da7c531b4554d0459cfddc5ca5d6d067acb1c4",
+          "path": "07_Вторая_мировая_и_ВОВ/64_Военные действия 1942 года/00_Основная_S39.jpg",
+          "main": true
+        }
+      ],
+      "number": 64,
+      "folder": "07_Вторая_мировая_и_ВОВ/64_Военные действия 1942 года",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "stalingrad",
+      "period": 6,
+      "year": 1942,
+      "title": "Сталинградская битва",
+      "learn": "Волга, Дон, Калач, Котельниковский; операции Уран и Кольцо.",
+      "variants": [
+        {
+          "topic": "stalingrad",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A53",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 105,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 830,
+          "height": 773,
+          "sha256": "8d595982c002ff5aa791753fba83546efaca68f366737820f6481cc6e08945a0",
+          "path": "07_Вторая_мировая_и_ВОВ/65_Сталинградская битва/00_Основная_A53.jpg",
+          "main": true
+        }
+      ],
+      "number": 65,
+      "folder": "07_Вторая_мировая_и_ВОВ/65_Сталинградская битва",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "D23486",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/EE4346CB3C2F92614EF34CF827B7A07A/xs3docsrcEE4346CB3C2F92614EF34CF827B7A07A_1_1450109982.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "turning",
+      "period": 6,
+      "year": 1943,
+      "title": "Коренной перелом — общая карта 1942-1943",
+      "learn": "Сталинград, Курск, Днепр, Киев; последовательность продвижения фронта.",
+      "variants": [
+        {
+          "topic": "turning",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A54",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 107,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 572,
+          "height": 850,
+          "sha256": "b0b744266fe064993d7996f759b6c4292dd38282ac2ba44e51300cca9e3581c4",
+          "path": "07_Вторая_мировая_и_ВОВ/66_Коренной перелом — общая карта 1942-1943/00_Основная_A54.jpg",
+          "main": true
+        }
+      ],
+      "number": 66,
+      "folder": "07_Вторая_мировая_и_ВОВ/66_Коренной перелом — общая карта 1942-1943",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "6891B5",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/06DBA2EF49259D3B4148A7E57A19CE40/xs3docsrc06DBA2EF49259D3B4148A7E57A19CE40_1_1601283559.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "2AB7B9",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/F00BCF58953581234908C15B3F1DE3F8/xs3docsrcF00BCF58953581234908C15B3F1DE3F8_1_1724159996.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "1AB114",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/0EF67531F0EBA5BD46DCBB964F150B86/xs3docsrc0EF67531F0EBA5BD46DCBB964F150B86_2_1695307129.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "6341C6",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/E620A3A472DBA2094002F5DA48C4DCDF/xs3docsrcE620A3A472DBA2094002F5DA48C4DCDF_1_1508242929.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "4DE04E",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/92D29C92BD6CA4624C7DC79EE56B4EE6/xs3docsrc92D29C92BD6CA4624C7DC79EE56B4EE6_1_1575896520.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A55",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 109,
+          "document": "Артасов_2024-2026_карты.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "kursk",
+      "period": 6,
+      "year": 1943,
+      "title": "Курская битва и битва за Днепр",
+      "learn": "Орёл, Белгород, Прохоровка, Харьков, Киев; лето-осень 1943 года.",
+      "variants": [
+        {
+          "topic": "kursk",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A56",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 111,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 740,
+          "height": 766,
+          "sha256": "e26e2ab6e2dbfc4b625ee1978664305567c2bf37b56c56c9986b243d01ed0974",
+          "path": "07_Вторая_мировая_и_ВОВ/67_Курская битва и битва за Днепр/00_Основная_A56.jpg",
+          "main": true
+        }
+      ],
+      "number": 67,
+      "folder": "07_Вторая_мировая_и_ВОВ/67_Курская битва и битва за Днепр",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "83C5B1",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/85CD085BA664AA674125E51F5FCBA68B/xs3docsrc85CD085BA664AA674125E51F5FCBA68B_1_1536144954.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "DBFBC9",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/9FE432DB2A1DBA33448653B673DDF42C/xs3docsrc9FE432DB2A1DBA33448653B673DDF42C_1_1536046251.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A57",
+          "url": "https://vk.com/doc2864527_689841447",
+          "page": 113,
+          "document": "Артасов_2024-2026_карты.pdf"
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S40",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 40,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "liberation1944",
+      "period": 6,
+      "year": 1944,
+      "title": "Освобождение территории СССР и Европы в 1944 году",
+      "learn": "Ленинград, Крым, Белоруссия, Прибалтика, Балканы; линии фронта начала и конца года.",
+      "variants": [
+        {
+          "topic": "liberation1944",
+          "source": "Демоверсия ФИПИ 2025",
+          "code": "DEMO2025",
+          "url": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2025/is_11_2025.zip",
+          "priority": 0,
+          "page": 6,
+          "document": "ФИПИ_2025_Демоверсия.pdf",
+          "width": 1288,
+          "height": 1779,
+          "sha256": "39a4a33addc50dd739611d3d3b7df3aa967833283abefdcdda172835a900a38a",
+          "path": "07_Вторая_мировая_и_ВОВ/68_Освобождение территории СССР и Европы в 1944 году/00_Основная_DEMO2025.png",
+          "main": true
+        }
+      ],
+      "number": 68,
+      "folder": "07_Вторая_мировая_и_ВОВ/68_Освобождение территории СССР и Европы в 1944 году",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "519D96",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/508D939EFC45879F43EB0885A75C51FA/xs3docsrc508D939EFC45879F43EB0885A75C51FA_1_1505391959.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "60E125",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/7C5D0EEF284FB62E45881DD0333F48AB/xs3docsrc7C5D0EEF284FB62E45881DD0333F48AB_1_1481641665.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "6D7BAF",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/33316761737D8C394172D13F6791C489/xs3docsrc33316761737D8C394172D13F6791C489_1_1629202550.jpg",
+          "page": null,
+          "document": null
+        },
+        {
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S41",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "page": 41,
+          "document": "Учебные_карты_Ctege.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "bagration",
+      "period": 6,
+      "year": 1944,
+      "title": "Операция Багратион",
+      "learn": "Витебск, Бобруйск, Минск, Вильнюс, Брест; лето 1944 года.",
+      "variants": [
+        {
+          "topic": "bagration",
+          "source": "Открытый банк ФИПИ",
+          "code": "24C893",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/67AC2324A5A2A5DA480BC09E4F846192/xs3docsrc67AC2324A5A2A5DA480BC09E4F846192_1_1536046156.jpg",
+          "priority": 1,
+          "page": null,
+          "document": null,
+          "width": 624,
+          "height": 666,
+          "sha256": "0a55760b7b50e73729b7ba59ea094e499dd72f1581f1e2c318ec99cf53432955",
+          "path": "07_Вторая_мировая_и_ВОВ/69_Операция Багратион/00_Основная_24C893.jpg",
+          "main": true
+        }
+      ],
+      "number": 69,
+      "folder": "07_Вторая_мировая_и_ВОВ/69_Операция Багратион",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "vistula",
+      "period": 6,
+      "year": 1945,
+      "title": "Висло-Одерская операция",
+      "learn": "Варшава, Висла, Познань, Одер; январь-февраль 1945 года.",
+      "variants": [
+        {
+          "topic": "vistula",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A58",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 115,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1168,
+          "height": 753,
+          "sha256": "73647b8ffdd1a2201b5eabcd21c3e3125a532a8c421a146d122fd00d9d8c0f80",
+          "path": "07_Вторая_мировая_и_ВОВ/70_Висло-Одерская операция/00_Основная_A58.jpg",
+          "main": true
+        }
+      ],
+      "number": 70,
+      "folder": "07_Вторая_мировая_и_ВОВ/70_Висло-Одерская операция",
+      "omitted_sources": [
+        {
+          "source": "Открытый банк ФИПИ",
+          "code": "4D5F78",
+          "url": "https://ege.fipi.ru/docs/068A227D253BA6C04D0C832387FD0D89/docs/AA0AC2DBC27591B0476177DD8BD58286/xs3docsrcAA0AC2DBC27591B0476177DD8BD58286_1_1731569561.jpg",
+          "page": null,
+          "document": null
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "east1945",
+      "period": 6,
+      "year": 1945,
+      "title": "Восточно-Прусская операция 1945 года",
+      "learn": "Кёнигсберг, Тильзит, Пиллау; 2-й и 3-й Белорусские фронты.",
+      "variants": [
+        {
+          "topic": "east1945",
+          "source": "Открытый вариант ФИПИ 2026",
+          "code": "OPEN2026",
+          "url": "https://doc.fipi.ru/ege/otkrytyy-bank-zadaniy-ege/otkrytyye-varianty-kim-ege/2026/Ist_1_ege2026.zip",
+          "priority": 0,
+          "page": 5,
+          "document": "ФИПИ_2026_Открытый_вариант.pdf",
+          "width": 2041,
+          "height": 2608,
+          "sha256": "a325d6d6a9715168c596159cc79b833caa2d48c26a00a504eec1e4aaebd88ef8",
+          "path": "07_Вторая_мировая_и_ВОВ/71_Восточно-Прусская операция 1945 года/00_Основная_OPEN2026.png",
+          "main": true
+        }
+      ],
+      "number": 71,
+      "folder": "07_Вторая_мировая_и_ВОВ/71_Восточно-Прусская операция 1945 года",
+      "omitted_sources": [
+        {
+          "source": "Демоверсия ФИПИ 2027 — проект",
+          "code": "DEMO2027",
+          "url": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/is_11_2027.zip",
+          "page": 6,
+          "document": "ФИПИ_2027_Демоверсия_ПРОЕКТ.pdf"
+        }
+      ],
+      "additional_reason": ""
+    },
+    {
+      "key": "berlin",
+      "period": 6,
+      "year": 1945,
+      "title": "Берлинская операция",
+      "learn": "Одер, Нейсе, Зееловские высоты, Берлин, Эльба; апрель-май 1945 года.",
+      "variants": [
+        {
+          "topic": "berlin",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A59",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 117,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 519,
+          "height": 685,
+          "sha256": "0f025fefd2be398843cb766c8532ff0d24de43d25cd01a8128ac8529fe7a3242",
+          "path": "07_Вторая_мировая_и_ВОВ/72_Берлинская операция/00_Основная_A59.jpg",
+          "main": true
+        }
+      ],
+      "number": 72,
+      "folder": "07_Вторая_мировая_и_ВОВ/72_Берлинская операция",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "europe1945",
+      "period": 6,
+      "year": 1945,
+      "title": "Завершение войны в Европе в 1945 году",
+      "learn": "Освобождение Польши, Венгрии, Австрии и Чехословакии; выход к Берлину и Эльбе.",
+      "variants": [
+        {
+          "topic": "europe1945",
+          "source": "Учебный атлас — подборка Ctege",
+          "code": "S42",
+          "url": "https://down.ctege.info/ege/obshee/history/history-B8-B11-karty.pdf",
+          "priority": 3,
+          "page": 42,
+          "document": "Учебные_карты_Ctege.pdf",
+          "width": 1600,
+          "height": 900,
+          "sha256": "a4d8a912594f80bff462d36a3e31b1aab5f538e10f7a52fd9691e6c42e76b371",
+          "path": "07_Вторая_мировая_и_ВОВ/73_Завершение войны в Европе в 1945 году/00_Основная_S42.jpg",
+          "main": true
+        }
+      ],
+      "number": 73,
+      "folder": "07_Вторая_мировая_и_ВОВ/73_Завершение войны в Европе в 1945 году",
+      "omitted_sources": [],
+      "additional_reason": ""
+    },
+    {
+      "key": "japan1945",
+      "period": 6,
+      "year": 1945,
+      "title": "Советско-японская война 1945 года",
+      "learn": "Маньчжурия, Харбин, Мукден, Порт-Артур, Сахалин и Курилы.",
+      "variants": [
+        {
+          "topic": "japan1945",
+          "source": "Артасов — подборка HistFAQ",
+          "code": "A60",
+          "url": "https://vk.com/doc2864527_689841447",
+          "priority": 2,
+          "page": 119,
+          "document": "Артасов_2024-2026_карты.pdf",
+          "width": 1015,
+          "height": 756,
+          "sha256": "069947fb9aa0d36210d824043464f4a65bde5614f8be3e9f1bfe1ad422169395",
+          "path": "07_Вторая_мировая_и_ВОВ/74_Советско-японская война 1945 года/00_Основная_A60.jpg",
+          "main": true
+        }
+      ],
+      "number": 74,
+      "folder": "07_Вторая_мировая_и_ВОВ/74_Советско-японская война 1945 года",
+      "omitted_sources": [],
+      "additional_reason": ""
+    }
+  ],
+  "counts": {
+    "Демоверсии ФИПИ 2022–2024": 1,
+    "Артасов — подборка HistFAQ": 38,
+    "Учебный атлас — подборка Ctege": 22,
+    "Открытый банк ФИПИ": 16,
+    "Демоверсия ФИПИ 2026": 1,
+    "Демоверсия ФИПИ 2025": 1,
+    "Открытый вариант ФИПИ 2026": 1
+  },
+  "removed_redundant_count": 97
+}
